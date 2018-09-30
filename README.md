@@ -1,4 +1,19 @@
-personal blog
+personal blog :construction: WIP.
 ---
 jekyll & github pages.
-jekyll-theme-modernist
+
+### installation.
+
+```
+ gem install bundler
+ ```
+
+ ```
+ bundler install
+ ```
+
+ ### run.
+
+ ```
+ jekyll serve
+ ```
