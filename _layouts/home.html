@@ -21,7 +21,7 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-            <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ post.tags }}</nobr></code></a>
+            <a href="/tag/{{ post.tags }}"><code class="highligher-rouge"><nobr>{{ post.tags }}</nobr></code></a>
           </h3>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
@@ -33,7 +33,8 @@ layout: default
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
-    {% include archive.html %}
+    <div class="archive">
+      {% include archive.html %}
+    </div>
   {%- endif -%}
-
 </div>

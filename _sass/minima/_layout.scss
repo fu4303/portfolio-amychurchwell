@@ -184,6 +184,10 @@
   @include relative-font-size(2);
 }
 
+.archive {
+  text-align: right;
+}
+
 .container {
   border: 2px solid $grey-color-dark;
   padding: $spacing-unit;
