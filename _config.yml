@@ -24,7 +24,7 @@ github_username:  amychurchwell
 
 # Build settings
 markdown: kramdown
-
+hylighter: pygments
 plugins:
   - jekyll-feed
 
