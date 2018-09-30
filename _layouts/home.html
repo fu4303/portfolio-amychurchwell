@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <div class="post-container">
+    <div class="container">
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
       <ul class="post-list">
         {%- for post in site.posts -%}
@@ -21,6 +21,7 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
+            <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ post.tags }}</nobr></code></a>
           </h3>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}

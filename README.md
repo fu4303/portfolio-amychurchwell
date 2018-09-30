@@ -1,6 +1,7 @@
 personal blog :construction: WIP.
 ---
 jekyll & github pages.
+https://amychurchwell.github.io
 
 ### installation.
 
@@ -19,6 +20,6 @@ jekyll & github pages.
  ```
 
  ---
- ### thank you
+ ### resources.
  - [Jekyll](https://jekyllrb.com/)
  - [post tags](http://longqian.me/2017/02/09/github-jekyll-tag/)
