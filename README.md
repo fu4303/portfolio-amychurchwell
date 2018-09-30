@@ -17,3 +17,8 @@ jekyll & github pages.
  ```
  jekyll serve
  ```
+
+ ---
+ ### thank you
+ - [Jekyll](https://jekyllrb.com/)
+ - [post tags](http://longqian.me/2017/02/09/github-jekyll-tag/)
