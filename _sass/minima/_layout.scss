@@ -2,8 +2,6 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -52,7 +50,6 @@
     right: $spacing-unit / 2;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
-    border-radius: 5px;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -191,6 +188,9 @@
 .container {
   border: 2px solid $grey-color-dark;
   padding: $spacing-unit;
+  @include media-query($on-palm){
+    border: none;
+  }
 }
 
 .post-list-heading {
@@ -213,6 +213,7 @@
 
 .post-link {
   display: block;
+  text-transform: lowercase;
   @include relative-font-size(1.5);
 }
 

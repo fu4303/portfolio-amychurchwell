@@ -23,3 +23,6 @@ https://amychurchwell.github.io
  ### resources.
  - [Jekyll](https://jekyllrb.com/)
  - [post tags](http://longqian.me/2017/02/09/github-jekyll-tag/)
+
+ #### to-do
+ - `.post-link` in `.post-list` alternate color property ROYGBIV. :rainbow:

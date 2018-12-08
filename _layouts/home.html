@@ -21,7 +21,7 @@ layout: default
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-            <a href="/tag/{{ post.tags }}"><code class="highligher-rouge"><nobr>{{ post.tags }}</nobr></code></a>
+            <a href="/tag/{{ post.tags }}"><code class="highlighter-rouge"><nobr>{{ post.tags }}</nobr></code></a>
           </h3>
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
