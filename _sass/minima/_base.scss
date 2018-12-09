@@ -111,8 +111,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: $secondary-brand-color;
   }
 
   .social-media-list &:hover {
@@ -151,8 +150,7 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
-  color: #000;
+  color: $grey-color-light;
 }
 
 code {
