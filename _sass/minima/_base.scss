@@ -111,7 +111,7 @@ a {
   }
 
   &:hover {
-    color: $secondary-brand-color;
+    text-decoration: underline;
   }
 
   .social-media-list &:hover {
@@ -148,9 +148,8 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid #000;
   border-radius: 3px;
-  color: $grey-color-light;
 }
 
 code {

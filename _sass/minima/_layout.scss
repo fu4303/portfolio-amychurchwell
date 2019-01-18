@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-  min-height: $spacing-unit * 1.865;
+  border-bottom: 2px solid #000;
+  background: $secondary-brand-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -15,11 +16,6 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-
-  &,
-  &:visited {
-    color: $secondary-brand-color;
-  }
 }
 
 .site-nav {
@@ -38,10 +34,6 @@
     color: $text-color;
     line-height: $base-line-height;
 
-    &:hover {
-      color: $secondary-brand-color;
-    }
-
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
@@ -52,8 +44,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background-color: $secondary-brand-color;
+    border: 2px solid black;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -66,6 +58,7 @@
     }
 
     .menu-icon {
+      background: $secondary-brand-color;
       display: block;
       float: right;
       width: 36px;
@@ -75,7 +68,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: #000;
       }
     }
 
@@ -123,7 +116,6 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -175,6 +167,7 @@
 /**
  * Page content
  */
+ 
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
@@ -185,63 +178,82 @@
 }
 
 .archive {
+  background: $secondary-brand-color;
+  border: 2px solid #000;
   text-align: right;
+  margin-top: $spacing-unit;
+  padding: $spacing-unit;
+
+  @include media-query($on-palm) {
+    text-align: left;
+  }
+
+  .tags {
+    color: #000;
+  }
 }
 
 .container {
-  border: 1px solid $grey-color-light;
-  padding: $spacing-unit;
-  @include media-query($on-palm){
-    border: none;
+  background-color: $secondary-brand-color;
+  border: 2px solid #000;
+
+  article {
+    margin: $spacing-unit;
+  }
+
+  .rss-subscribe {
+    margin-left: $spacing-unit;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  text-transform: lowercase;
-  @include relative-font-size(1.5);
-  &:hover {
-    text-decoration: underline;
-  }
-}
 
 
 
 /**
- * Posts
- */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
+* Posts
+*/
 
-.post-title {
-  text-transform: lowercase;
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
+  .post-list-heading {
+    border-bottom: 2px solid #000;
+    text-align: center;
   }
-}
+
+  .post-list {
+    list-style: none;
+
+    > li {
+      margin-bottom: $spacing-unit;
+    }
+  }
+
+  .post-meta {
+    font-size: $small-font-size;
+  }
+
+  .post-link {
+    text-transform: lowercase;
+    margin-right: 12px;
+    @include relative-font-size(1.5);
+  }
+
+  .post-header {
+    margin-bottom: $spacing-unit;
+  }
+
+  .post-title {
+    text-transform: lowercase;
+    @include relative-font-size(2.625);
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.25);
+    }
+  }
 
 .post-content {
   margin-bottom: $spacing-unit;
