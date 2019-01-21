@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-bottom: 2px solid #000;
+  border-bottom: $border;
   background: $secondary-brand-color;
 
   // Positioning context for the mobile navigation icon
@@ -45,7 +45,7 @@
     top: 9px;
     right: $spacing-unit / 2;
     background-color: $secondary-brand-color;
-    border: 2px solid black;
+    border: $border;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -179,7 +179,7 @@
 
 .archive {
   background: $secondary-brand-color;
-  border: 2px solid #000;
+  border: $border;
   text-align: right;
   margin-top: $spacing-unit;
   padding: $spacing-unit;
@@ -195,7 +195,7 @@
 
 .container {
   background-color: $secondary-brand-color;
-  border: 2px solid #000;
+  border: $border;
 
   article {
     margin: $spacing-unit;
@@ -218,7 +218,7 @@
 */
 
   .post-list-heading {
-    border-bottom: 2px solid #000;
+    border-bottom: $border;
     text-align: center;
   }
 
