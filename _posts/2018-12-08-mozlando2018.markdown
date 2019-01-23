@@ -6,7 +6,7 @@ tags: mozilla
 
 <p>Hello! I am writing to you on a a very full flight (~6 hours) back to Portland Oregon after spending a week in Orlando Florida for the end of year <a href="#">Mozilla All-Hands.</a></p>
 
-<p>I have been working at Mozilla for a smidge over 4 months now. (My official start date being August 4, 2018.) This was my very first all hands.</p>
+<p>I have been working at Mozilla for a smidge over 4 months now. (My official start date being August 6, 2018.) This was my very first all hands.</p>
 
 <p>I wasn't quite sure what to expect. Mozilla, while not a huge company, is certainly the largest company I have ever worked for (~1300 employees, so I was told.) Before arriving the general advice I received was saturated with recommendations to take as many breaks as I needed and to nap often. I was a little concerned what I was about to walk into, truth be told. :worry:</p>
 
