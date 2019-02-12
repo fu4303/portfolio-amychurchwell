@@ -180,6 +180,8 @@
 .archive {
   background: $secondary-brand-color;
   border: $border;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
   text-align: right;
   margin-top: $spacing-unit;
   padding: $spacing-unit;
@@ -196,6 +198,8 @@
 .container {
   background-color: $secondary-brand-color;
   border: $border;
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
 
   article {
     margin: $spacing-unit;
