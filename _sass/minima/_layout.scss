@@ -4,6 +4,7 @@
 .site-header {
   border-bottom: $border;
   background: $secondary-brand-color;
+  color: $text-color;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -180,8 +181,8 @@
 .archive {
   background: $secondary-brand-color;
   border: $border;
-  border-right: 4px solid #000;
-  border-bottom: 4px solid #000;
+  border-right: 4px solid $border-color;
+  border-bottom: 4px solid $border-color;
   text-align: right;
   margin-top: $spacing-unit;
   padding: $spacing-unit;
@@ -191,15 +192,15 @@
   }
 
   .tags {
-    color: #000;
+    color: $text-color;
   }
 }
 
 .container {
   background-color: $secondary-brand-color;
   border: $border;
-  border-right: 4px solid #000;
-  border-bottom: 4px solid #000;
+  border-right: 4px solid $border-color;
+  border-bottom: 4px solid $border-color;
 
   article {
     margin: $spacing-unit;
@@ -223,6 +224,7 @@
 
   .post-list-heading {
     border-bottom: $border;
+    color: $text-color;
     text-align: center;
   }
 
