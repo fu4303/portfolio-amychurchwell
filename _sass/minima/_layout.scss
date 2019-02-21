@@ -4,7 +4,12 @@
 .site-header {
   border-bottom: $border;
   background: $secondary-brand-color;
-  color: $text-color;
+
+  .wrapper {
+    a { //clean this up
+      color: $text-color;
+    }
+  }
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -69,7 +74,7 @@
       text-align: center;
 
       > svg {
-        fill: #000;
+        fill: $text-color;
       }
     }
 
@@ -233,6 +238,11 @@
 
     > li {
       margin-bottom: $spacing-unit;
+      h3 { //clean this up
+        a {
+          color: $text-color;
+        }
+      }
     }
   }
 
