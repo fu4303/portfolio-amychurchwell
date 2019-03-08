@@ -1,7 +1,7 @@
 personal blog :construction: WIP.
 ---
 jekyll & github pages.
-https://amychurchwell.github.io
+https://amychurchwell.com
 
 ### installation.
 
