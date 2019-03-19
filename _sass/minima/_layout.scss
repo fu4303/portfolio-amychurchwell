@@ -107,6 +107,11 @@
  */
 .site-footer {
   padding: $spacing-unit 0;
+
+  p {
+    background: lighten($secondary-brand-color, 40%);
+    padding: 0 5px 0 5px;
+  }
 }
 
 .footer-heading {
@@ -118,6 +123,11 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+
+  li {
+    background: lighten($secondary-brand-color, 40%);
+    padding: 0 3px 0 3px;
+  }
 }
 
 .footer-col-wrapper {
