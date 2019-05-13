@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-  border-bottom: $border;
   background: $secondary-brand-color;
 
   .wrapper {
@@ -17,9 +16,10 @@
 
 .site-title {
   @include relative-font-size(1.625);
+  font-family: $pixel-font;
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
+  letter-spacing: 2px;
   margin-bottom: 0;
   float: left;
 }
@@ -51,7 +51,6 @@
     top: 9px;
     right: $spacing-unit / 2;
     background-color: $secondary-brand-color;
-    border: $border;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -114,11 +113,6 @@
   }
 }
 
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
-}
-
 .contact-list,
 .social-media-list {
   list-style: none;
@@ -128,6 +122,10 @@
     background: lighten($secondary-brand-color, 40%);
     padding: 0 3px 0 3px;
   }
+}
+
+.site-description {
+  font-family: $pixel-font;
 }
 
 .footer-col-wrapper {
@@ -196,12 +194,14 @@
   justify-content: space-between;
 
   .sm-section, .md-section {
-    background: $secondary-brand-color;
-    border: $border;
-    border-right: 4px solid $border-color;
-    border-bottom: 4px solid $border-color;
+    background: $container-background;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
     text-align: right;
     padding: $spacing-unit;
+    h1, h2 {
+      font-family: $pixel-font;
+    }
   }
 
   .md-section {
@@ -221,10 +221,10 @@
 }
 
 .container {
-  background-color: $secondary-brand-color;
-  border: $border;
-  border-right: 4px solid $border-color;
-  border-bottom: 4px solid $border-color;
+  background-color: $container-background;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+  padding: 5px;
   margin-bottom: $spacing-unit;
 
   article {
@@ -255,7 +255,7 @@
 * Posts
 */
   .post-list-heading {
-    border-bottom: $border;
+    font-family: $pixel-font;
     color: $text-color;
     text-align: center;
   }
@@ -278,12 +278,14 @@
   }
 
   .post-link {
+    font-family: $pixel-font;
     text-transform: lowercase;
     margin-right: 12px;
     @include relative-font-size(1.5);
   }
 
   .post-header {
+    font-family: $pixel-font;
     margin-bottom: $spacing-unit;
   }
 
