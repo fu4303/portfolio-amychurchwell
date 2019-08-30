@@ -2,11 +2,25 @@
  * Site header
  */
 .site-header {
-  background: $secondary-brand-color;
+  background: $container-background;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  // Scalloped trim
+  &::after {
+    background: 
+    radial-gradient(circle at 50% 0%, $container-background 25%, rgba(0, 0, 0, 0.35) 29%, transparent 0%);
+    background-color: transparent;  
+    background-size: 20px 40px;  
+    background-repeat: repeat-x;
+    content:" ";
+    height:50px;
+    position:absolute;
+    width: 100%;
+  }
 }
+
 
 .site-title {
   @include relative-font-size(1.625);
@@ -132,11 +146,23 @@
 /**
  * Web Ring
  */
+#web-ring {
+  background: $container-background;
+  width: 100%;
+}
 
- #web-ring {
-   background: $container-background;
-   width: 100%;
- }
+ /**
+  * About Page
+  */ 
+#about-banners li {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+.u-email {
+  text-decoration: underline;
+}
 
 /**
  * Page content

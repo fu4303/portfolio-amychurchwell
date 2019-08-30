@@ -12,5 +12,19 @@ layout: default
         <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>
       {%- include social.html -%}
+      <aside>
+        <ul id="about-banners">
+          <li>
+            <a href="https://www.mozilla.org/firefox/">
+              <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="Download Firefox banner." href="https://www.mozilla.org/firefox/">
+            </a>
+          </li>
+          <li>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+              <img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/creativecommons.png' | relative_url }}" />
+            </a>
+          </li>
+        </ul>
+      </aside>
     </article>
   </div>
