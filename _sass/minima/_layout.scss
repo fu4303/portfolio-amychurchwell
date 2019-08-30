@@ -55,11 +55,13 @@
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
     background-color: $secondary-brand-color;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    right: $spacing-unit / 2;
     text-align: right;
+    top: 9px;
+    z-index: 2;
 
     label[for="nav-trigger"] {
       display: block;
