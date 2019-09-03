@@ -10,7 +10,7 @@
   // Scalloped trim
   &::after {
     background: 
-    radial-gradient(circle at 50% 0%, $container-background 25%, rgba(0, 0, 0, 0.35) 29%, transparent 0%);
+    radial-gradient(circle at 50% 6%, #fefefe 25%, rgba(0, 0, 0, 0.25) 29%, transparent 0%);
     background-color: transparent;  
     background-size: 20px 40px;  
     background-repeat: repeat-x;
