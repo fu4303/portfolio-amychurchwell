@@ -22,4 +22,4 @@ https://amychurchwell.com
  ---
  ### resources.
  - [Jekyll](https://jekyllrb.com/)
- - [post tags](http://longqian.me/2017/02/09/github-jekyll-tag/)
+ - [post tags](https://longqian.me/2017/02/09/github-jekyll-tag/)

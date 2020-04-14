@@ -1,0 +1,35 @@
+/**
+* Site footer
+*/
+
+.site-footer {
+    margin-top: $spacing-unit;
+    
+    @include media-query($on-palm) {
+        display: none;
+    }
+    
+    p {
+        background: lighten($secondary-brand-color, 40%);
+        padding: 0 5px 0 5px;
+    }
+    
+    h2 {
+        font-family: $pixel-font;
+        text-align: right;
+    }
+}
+
+.social-media-title {
+    font-family: $pixel-font;
+}
+
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+    
+    li {
+        background: lighten($secondary-brand-color, 40%);
+        padding: 0 3px 0 3px;
+    }
+}
