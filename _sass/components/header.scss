@@ -25,12 +25,17 @@
 
 .site-title {
     @include relative-font-size(1.625);
+    float: left;
     font-family: $pixel-font;
     font-weight: 300;
-    line-height: $base-line-height * $base-font-size * 2.25;
     letter-spacing: 2px;
+    line-height: $base-line-height * $base-font-size * 2.25;
     margin-bottom: 0;
-    float: left;
+    text-decoration: none;
+    
+    &:hover {
+        background: complement($background-color);
+    }
 }
 
 .site-nav {
