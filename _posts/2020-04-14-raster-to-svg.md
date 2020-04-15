@@ -48,7 +48,9 @@ You can use the eyedropper tool to isolate a single color in your image and twea
 |![screenshot](/assets/img/posts/JPG-SVG/tolerance1.svg)| **1** |
 |![screenshot](/assets/img/posts/JPG-SVG/tolerance1.5.svg)| **1.5**|
 
-As we can see, it is never quite a _perfect_ match but Photoshop tries it's best. If you'd like to clean up the jagged edges you can use the **pen tool** to tweak the anchor points. I will not do this because I don't care. *shrug*
+As we can see, it is never quite a _perfect_ match but Photoshop tries it's best. If you'd like to clean up the jagged edges you can use the **pen tool** to tweak the anchor points.
+
+**TIP:** To avoid this issue, make your SVG larger than the size you'd like to use in production. It will seem crisper at a smaller size. See [How to scale SVG](https://css-tricks.com/scale-svg/) by Amelia Bellamy-Royds.
 
 ## 3. Create a new fill layer. **Layer** > **New Fill Layer** > **Solid Color**
 It will ask for a color, black is easiest to work with in my experience.
@@ -89,8 +91,7 @@ svg {
 }
 ```
 
-Helpful tips about working with SVG's:
+More tips about working with SVG's:
 
-- [How to scale SVG](https://css-tricks.com/scale-svg/) by Amelia Bellamy-Royds
 - [SVG Will Save Us](https://youtu.be/sxte3WpyO60) by [Sarah Drasner](https://sarahdrasnerdesign.com/)
 - [Getting Started with SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial) by [Mozilla Developer Network](https://developer.mozilla.org/).
