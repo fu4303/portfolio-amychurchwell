@@ -1,4 +1,4 @@
 ---
 layout: tag
-tag: photoshop
+tag: mozilla
 ---
