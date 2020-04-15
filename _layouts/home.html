@@ -15,14 +15,29 @@ layout: default
       <ul class="post-list">
         {%- for post in site.posts -%}
         <li>
+          {% capture now %}{{ site.time | date: '%s' }}{% endcapture %}
+          {% capture postdate %}{{ post.date | date: '%s' }}{% endcapture %}
+          
+          {% assign postdate = postdate | minus: 0 %}
+          {% assign month = now | minus: 2629800 %}
+        
+          {% if postdate >= month %}
+            <img class="new-post" src="/assets/img/new.gif" alt="new post!">
+          {% endif %}
+
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-            <a href="/tag/{{ post.tags }}"><code class="highlighter-rouge"><nobr>{{ post.tags }}</nobr></code></a>
           </h3>
+
+          {% for tag in post.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <span class="post-tag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+          {% endfor %}
+
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
           {%- endif -%}

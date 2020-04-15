@@ -1,14 +1,16 @@
 /**
- * Web Ring
- */
+* Web Ring
+*/
+
 #web-ring {
   background: $container-background;
   width: 100%;
 }
 
- /**
-  * About Page
-  */ 
+/**
+* About Page
+*/ 
+
 #about-banners li {
   margin: 0;
   display: inline-block;
@@ -20,8 +22,8 @@
 }
 
 /**
- * Page content
- */
+* Page content
+*/
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
@@ -34,7 +36,7 @@
 .sm-section-wrapper {
   display: flex;
   justify-content: space-between;
-
+  
   .sm-section, .md-section {
     background: $container-background;
     border-radius: 3px;
@@ -45,19 +47,19 @@
       font-family: $pixel-font;
     }
   }
-
+  
   .md-section {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width:         calc(50% - (#{$spacing-unit} / 2));
   }
-
+  
   .sm-section {
     width: -webkit-calc(33% - (#{$spacing-unit} / 2));
     width:         calc(33% - (#{$spacing-unit} / 2));
-
+    
     @include media-query($on-palm) {
-          width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+      width:         calc(100% - (#{$spacing-unit} / 2));
     }
   } 
 }
@@ -67,12 +69,12 @@
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
   padding: 5px;
-  margin-bottom: $spacing-unit;
-
+  margin: $spacing-unit 0;
+  
   article {
     margin: $spacing-unit;
   }
-
+  
   .rss-subscribe {
     margin-left: $spacing-unit;
     &:hover {
@@ -85,91 +87,99 @@
 /**
 * Posts
 */
-  .post-list-heading {
-    font-family: $pixel-font;
-    color: $text-color;
-    text-align: center;
+
+.post-list-heading {
+  font-family: $pixel-font;
+  color: $text-color;
+  text-align: center;
+}
+
+.post-list {
+  list-style: none;
+  position: relative;
+
+  .new-post {
+    position: absolute;
+    left: -20px;
+    top: 3px;
   }
-
-  .post-list {
-    list-style: none;
-
-    > li {
-      margin-bottom: $spacing-unit;
-      h3 { //clean this up
-        a {
-          color: $text-color;
-        }
+  
+  > li {
+    margin-bottom: $spacing-unit;
+    h3 { //clean this up
+      a {
+        color: $text-color;
       }
     }
   }
+}
 
-  .post-meta {
-    font-size: $small-font-size;
+.post-meta {
+  font-size: $small-font-size;
+}
+
+.post-link {
+  font-family: $pixel-font;
+  text-transform: lowercase;
+  margin-right: 12px;
+  @include relative-font-size(1.5);
+}
+
+.post-header {
+  font-family: $pixel-font;
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  text-transform: lowercase;
+  @include relative-font-size(2);
+  letter-spacing: -1px;
+  line-height: 1;
+  
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
   }
-
-  .post-link {
-    font-family: $pixel-font;
-    text-transform: lowercase;
-    margin-right: 12px;
-    @include relative-font-size(1.5);
-  }
-
-  .post-header {
-    font-family: $pixel-font;
-    margin-bottom: $spacing-unit;
-  }
-
-  .post-title {
-    text-transform: lowercase;
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
-    }
-  }
+}
 
 .post-content {
   font-size: $small-font-size;
   margin-bottom: $spacing-unit;
-
+  
   img {
     display: block;
     margin: 20px auto;
     max-width: 80%;
   }
-
+  
   a {
     border-bottom: 3px solid #fff;
     box-shadow: inset 0 -4px 0 #fff;
-
+    
     &:hover {
       background: #fff;
       text-decoration: none;
     }
   }
-
+  
   h2 {
     @include relative-font-size(2);
-
+    
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
     }
   }
-
+  
   h3 {
     @include relative-font-size(1.625);
-
+    
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
     }
   }
-
+  
   h4 {
     @include relative-font-size(1.25);
-
+    
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }

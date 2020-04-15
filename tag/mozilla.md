@@ -1,5 +1,4 @@
 ---
-layout: tagpage
-title: "Tag: mozilla"
-tag: mozilla
+layout: tag
+tag: photoshop
 ---

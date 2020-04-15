@@ -1,5 +1,4 @@
 ---
-layout: tagpage
-title: "Tag: photoshop"
+layout: tag
 tag: photoshop
 ---
