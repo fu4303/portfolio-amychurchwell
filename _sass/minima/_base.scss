@@ -26,6 +26,9 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 
   // dotted pattern
   background-color: $background-color;

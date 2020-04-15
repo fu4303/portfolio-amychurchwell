@@ -12,45 +12,45 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <section class="container">
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          {% capture now %}{{ site.time | date: '%s' }}{% endcapture %}
-          {% capture postdate %}{{ post.date | date: '%s' }}{% endcapture %}
+      <div class="post-container">
+        <ul class="post-list">
+          {%- for post in site.posts -%}
+          <li>
+            {% capture now %}{{ site.time | date: '%s' }}{% endcapture %}
+            {% capture postdate %}{{ post.date | date: '%s' }}{% endcapture %}
+            
+            <!-- 
+              hack to make postdate an integar, if you know a better way pls let me know. 
+            -->
+            {% assign postdate = postdate | minus: 0 %}
+            {% assign month = now | minus: 2629800 %}
           
-          {% assign postdate = postdate | minus: 0 %}
-          {% assign month = now | minus: 2629800 %}
-        
-          {% if postdate >= month %}
-            <img class="new-post" src="/assets/img/new.gif" alt="new post!">
-          {% endif %}
-
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-
-          {% for tag in post.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <span class="post-tag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
-          {% endfor %}
-
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-    </section>
-    <!-- <section class="sm-section-wrapper">
-      <div class="sm-section">
-        {% include archive.html %}
+            {% if postdate >= month %}
+              <img class="new-post" src="/assets/img/new.gif" alt="new post!">
+            {% endif %}
+  
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+  
+            {% for tag in post.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <span class="post-tag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+            {% endfor %}
+  
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
+          {%- endfor -%}
+        </ul>
       </div>
-    </section> -->
+      <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+    </section>
   {%- endif -%}
   {%- include footer.html -%}
 </main>

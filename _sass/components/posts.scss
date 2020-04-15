@@ -1,0 +1,119 @@
+/**
+* Posts
+*/
+
+.post-container {
+    padding: $spacing-unit 0;
+}
+
+.post-list-heading {
+    font-family: $pixel-font;
+    color: $text-color;
+    text-align: center;
+}
+
+.post-list {
+    list-style: none;
+    position: relative;
+    
+    .new-post {
+        position: absolute;
+        left: -20px;
+    }
+
+    .post-tag {
+        background: $background-color linear-gradient(to right, $background-color 0%, complement($background-color) 100%);
+        border-radius: 2px;
+        border: 1px solid rgba(126,126,126,.6);
+        color: $text-color;
+        font-size: $small-font-size;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding: 3px 10px;
+    }
+    
+    > li {
+        margin-bottom: $spacing-unit / 2;
+
+        h3 {
+            display: inline-block;
+            line-height: 1;
+            margin: ($spacing-unit/2) 0 0;
+        }
+    }
+}
+
+.post-meta {
+    display: block;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.post-link {
+    font-family: $pixel-font;
+    text-transform: lowercase;
+    margin-right: 12px;
+    @include relative-font-size(1.5);
+}
+
+.post-header {
+    font-family: $pixel-font;
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    text-transform: lowercase;
+    @include relative-font-size(2);
+    letter-spacing: -1px;
+    line-height: 1;
+    
+    @include media-query($on-laptop) {
+        @include relative-font-size(2.25);
+    }
+}
+
+.post-content {
+    font-size: $small-font-size;
+    margin-bottom: $spacing-unit;
+    
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+    
+    a {
+        border-bottom: 3px solid #fff;
+        box-shadow: inset 0 -4px 0 #fff;
+        
+        &:hover {
+            background: #fff;
+            text-decoration: none;
+        }
+    }
+    
+    h2 {
+        @include relative-font-size(2);
+        
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.75);
+        }
+    }
+    
+    h3 {
+        @include relative-font-size(1.625);
+        
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.375);
+        }
+    }
+    
+    h4 {
+        @include relative-font-size(1.25);
+        
+        @include media-query($on-laptop) {
+            @include relative-font-size(1.125);
+        }
+    }
+}
