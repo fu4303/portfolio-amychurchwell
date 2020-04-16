@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "convert a raster image to svg"
+title:  "Convert a raster image to svg in photoshop"
 categories: [blog, tech]
 tags: [photoshop]
 ---

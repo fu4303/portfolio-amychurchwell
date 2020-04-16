@@ -16,7 +16,7 @@ https://amychurchwell.com
  ### run.
 
  ```
- jekyll serve
+ bundle exec jekyll serve
  ```
 
  ---
