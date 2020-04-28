@@ -2,21 +2,25 @@
 layout: default
 ---
 <div class="container">
-  <article class="post">
+  <article>
     <header class="post-header">
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
-    <div class="post-content">
+    <div>
       <figure id="raccoon-gif">
         <img src="{{ '/assets/img/raccoon.gif' | relative_url }}" alt="animated gif of a raccoon on a laptop">
-        <figcaption>(art by <a href="https://www.nonolottie.com/">nonolottie</a>)</figcaption>
+        <figcaption>
+          <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
+        </figcaption>
       </figure>
-      {{ content }}
+      <p>
+        {{ content }}
+      </p>
     </div>
     {%- include social.html -%}
     <ul id="about-banners">
       <li>
-        <a href="https://www.mozilla.org/firefox/">
+        <a href="https://www.mozilla.org/firefox/new/">
           <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
         </a>
       </li>
@@ -25,4 +29,13 @@ layout: default
       </li>
     </ul>
   </article>
+</div>
+
+<div class="sm-section">
+  <h2>Skills</h2>
+  <ul>
+    {% for skill in page.skills %}
+    <li><p>{{ skill }}</p></li>
+    {% endfor %}
+  </ul>
 </div>
