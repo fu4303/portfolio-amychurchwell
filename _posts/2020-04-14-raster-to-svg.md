@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Convert a raster image to svg in photoshop"
-categories: [blog, tech]
-tags: [photoshop]
+categories: tech
+tags: photoshop
 ---
 
 Hello! While this has probably been written about before, it's a common issue I encounter when working with assets on websites-- so I thought: _what the heck, I'll write a quick tutorial..._

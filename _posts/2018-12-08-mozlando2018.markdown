@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Mozlando 2018"
-categories: [blog, tech]
-tags: [mozilla]
+categories: tech
+tags: mozilla
 ---
 
 <p>Hello! I am writing to you on a a very full flight (~6 hours) back to Portland Oregon after spending a week in Orlando Florida for the end of year <a href="#">Mozilla All-Hands.</a></p>

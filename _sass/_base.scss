@@ -115,12 +115,14 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 a {
+  color: $text-color;
+
   &:visited {
-    color: darken($brand-color, 15%);
+    text-decoration: underline;
   }
 
   &:hover {
-    color: $text-color;
+    background: $secondary-brand-color;
     text-underline-position: under;
   }
 

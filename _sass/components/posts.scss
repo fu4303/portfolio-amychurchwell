@@ -45,16 +45,18 @@
 }
 
 .post-tag {
-    background: $background-color linear-gradient(to right, $background-color 0%, complement($background-color) 100%);
+    background: $background-color linear-gradient(to right, $background-color 0%, $secondary-brand-color 100%);
     border-radius: 2px;
     border: 1px solid rgba(126,126,126,.6);
     color: $text-color;
+    cursor: pointer;
     font-size: $small-font-size;
     font-size: 10px;
     letter-spacing: 2px;
     padding: 3px 10px;
     
     a {
+        background: transparent;
         text-decoration: none;
     }
     
@@ -65,14 +67,11 @@
 
 .post-link {
     @include relative-font-size(1.5);
+    color: $text-color;
     font-family: $pixel-font;
     margin-right: 12px;
     text-decoration: none;
     text-transform: lowercase;
-
-    &:hover {
-        background: $background-color;
-    }
 }
 
 .post-header {
@@ -123,9 +122,5 @@
         @include media-query($on-laptop) {
             @include relative-font-size(1.125);
         }
-    }
-    
-    a:hover {
-        background: $background-color;
     }
 }

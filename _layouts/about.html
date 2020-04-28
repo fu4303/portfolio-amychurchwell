@@ -7,20 +7,19 @@ layout: default
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
     <div class="post-content">
+      <img id="raccoon-gif" src="{{ '/assets/img/raccoon.gif' | relative_url }}" alt="animated gif of a raccoon on a laptop">
       {{ content }}
     </div>
     {%- include social.html -%}
-    <aside>
-      <ul id="about-banners">
-        <li>
-          <a href="https://www.mozilla.org/firefox/">
-            <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner" href="https://www.mozilla.org/firefox/">
-          </a>
-        </li>
-        <li>
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
-        </li>
-      </ul>
-    </aside>
+    <ul id="about-banners">
+      <li>
+        <a href="https://www.mozilla.org/firefox/">
+          <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
+        </a>
+      </li>
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
+      </li>
+    </ul>
   </article>
 </div>

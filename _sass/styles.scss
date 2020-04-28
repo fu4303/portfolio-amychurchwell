@@ -23,7 +23,7 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 $text-color:       #474973 !default;
-$background-color: #ffe5ee !default;
+$background-color: #DBD6F2 !default;
 $brand-color:      #474973 !default;
 $secondary-brand-color: #ffe5ee !default;
 $container-background: rgba(255,255,255,1);
@@ -57,11 +57,18 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+@mixin graceful-color($prop, $color) {
+  @if alpha($color) < 1 {
+    #{$prop}: opacify($color, 1);
+  }
+  #{$prop}: $color;
+}
+
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting",
+  "base",
+  "layout",
+  "syntax-highlighting",
   "normalize",
   "components/header",
   "components/footer",

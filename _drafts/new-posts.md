@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add new icon to recent jekyll posts"
-categories: [blog, tech]
+categories: [tech]
 tags: [web development, jekyll]
 ---
 

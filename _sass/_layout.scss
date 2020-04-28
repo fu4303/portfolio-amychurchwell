@@ -25,6 +25,24 @@
   text-decoration: underline;
 }
 
+#raccoon-gif {
+  width: 300px;
+  float: left;
+
+  @include media-query($on-palm) {
+    float: none;
+  }
+}
+
+.social-media-title {
+  font-family: $pixel-font;
+}
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
 /**
 * Page content
 */
@@ -73,6 +91,7 @@
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
   margin: $spacing-unit 0;
+  overflow: auto;
   padding: 5px;
   position: relative;
   
@@ -82,6 +101,7 @@
   
   .rss-subscribe {
     margin-left: $spacing-unit;
+
     &:hover {
       cursor: pointer;
       text-decoration: underline;
