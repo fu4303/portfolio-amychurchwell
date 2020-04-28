@@ -3,7 +3,7 @@
 */
 
 .bug-note {
-    font-size: 12px;
+    font-size: $small-font-size;
     margin-top: $spacing-unit;
 }
 
@@ -32,7 +32,7 @@
         h3 {
             display: inline-block;
             line-height: 1;
-            margin: ($spacing-unit/2) 0 0;
+            margin: ($spacing-unit/3) 0 0;
         }
     }
 }
@@ -45,7 +45,7 @@
 }
 
 .post-tag {
-    background: $background-color linear-gradient(to right, $background-color 0%, $secondary-brand-color 100%);
+    background: lighten($background-color, 5%);
     border-radius: 2px;
     border: 1px solid rgba(126,126,126,.6);
     color: $text-color;
@@ -66,24 +66,22 @@
 }
 
 .post-link {
-    @include relative-font-size(1.5);
     color: $text-color;
     font-family: $pixel-font;
     margin-right: 12px;
     text-decoration: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .post-header {
-    font-family: $pixel-font;
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    text-transform: lowercase;
     @include relative-font-size(2);
-    letter-spacing: -1px;
+    font-family: $pixel-font;
     line-height: 1;
+    text-transform: lowercase;
     
     @include media-query($on-laptop) {
         @include relative-font-size(2.25);

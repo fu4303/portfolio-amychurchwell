@@ -5,15 +5,13 @@ layout: default
   <div class="container">
     <article>
       <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
         {% if page.tags.size > 0 %}
-          <span class="post-tag">[
-            {% for tag in page.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/tag/{{ tag_name }}">{{ tag_name }}</a>
-            {% endfor %}
-          ]</span>
+          {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <span class="post-tag"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+          {% endfor %}
         {% endif %}
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="post-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
