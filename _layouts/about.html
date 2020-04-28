@@ -7,7 +7,10 @@ layout: default
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
     <div class="post-content">
-      <img id="raccoon-gif" src="{{ '/assets/img/raccoon.gif' | relative_url }}" alt="animated gif of a raccoon on a laptop">
+      <figure id="raccoon-gif">
+        <img src="{{ '/assets/img/raccoon.gif' | relative_url }}" alt="animated gif of a raccoon on a laptop">
+        <figcaption>(art by <a href="https://www.nonolottie.com/">nonolottie</a>)</figcaption>
+      </figure>
       {{ content }}
     </div>
     {%- include social.html -%}

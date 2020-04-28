@@ -32,6 +32,15 @@
   @include media-query($on-palm) {
     float: none;
   }
+
+  img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    color: $text-color;
+    font-style: italic;
+  }
 }
 
 .social-media-title {
