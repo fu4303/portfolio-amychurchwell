@@ -4,13 +4,19 @@ title:  "Mozlando 2018"
 tags: mozilla
 ---
 
-<p>Hello! I am writing to you on a a very full flight (~6 hours) back to Portland Oregon after spending a week in Orlando Florida for the end of year <a href="#">Mozilla All-Hands.</a></p>
+Hello! I am writing to you on a a very full flight (~6 hours) back to Portland Oregon after spending a week in Orlando Florida for the end of year Mozilla All-Hands.
 
-<p>I have been working at Mozilla for a smidge over 4 months now. (My official start date being August 6, 2018.) This was my very first all hands.</p>
 
-<p>I wasn't quite sure what to expect. Mozilla, while not a huge company, is certainly the largest company I have ever worked for (~1300 employees, so I was told.) Before arriving the general advice I received was saturated with recommendations to take as many breaks as I needed and to nap often. I was a little concerned what I was about to walk into, truth be told. :worry:</p>
+I have been working at Mozilla for a smidge over 4 months now. (My official start date being August 6, 2018.) This was my very first all hands.
 
-<p>Right away, we were immersed. While certainly very action-packed and tiring, I don't feel fatigued mentally. I feel very inspired about what we are doing at Mozilla and feel more solidified about our direction moving forward.</p>
 
-<p>For some context, I work on the Websites [MozMEAO] team in Marketing. Our team has the great priviledge of working on <a href="https://mozilla.org">mozilla.org</a>, a myriad of other pages across Mozilla, alongwith any sort of campaigns that the other teams within Marketing imagine up. No two days are the same, and it is incredibly interesting/creative work. It's awesome.* </p>
-<small>*If you are coding-inclined, you should pop over to our <a href="https://github.com/mozilla/bedrock">GitHub repo</a> and check out all the cool stuff we're doing. Feel free to submit <a href="https://github.com/mozilla/bedrock/issues">an issue</a> or <a href="https://github.com/mozilla/bedrock/pulls">a pull request</a> if you would like to contribute. :-)</small>
+I wasn't quite sure what to expect. Mozilla, while not a huge company, is certainly the largest company I have ever worked for (~1300 employees, so I was told.) Before arriving the general advice I received was saturated with recommendations to take as many breaks as I needed and to nap often. I was a little concerned what I was about to walk into, truth be told. :worry:
+
+
+Right away, we were immersed. While certainly very action-packed and tiring, I don't feel fatigued mentally. I feel very inspired about what we are doing at Mozilla and feel more solidified about our direction moving forward.
+
+
+For some context, I work on the Websites [MozMEAO](https://github.com/mozmeao) team in Marketing. Our team has the great priviledge of working on [mozilla.org](https://mozilla.org), a myriad of other pages across Mozilla, alongwith any sort of campaigns that the other teams within Marketing imagine up. No two days are the same, and it is incredibly interesting/creative work. It's awesome.* 
+
+
+<small>*If you are coding-inclined, you should pop over to our [GitHub repo](https://github.com/mozilla/bedrock) and check out all the cool stuff we're doing. Feel free to submit [an issue](https://github.com/mozilla/bedrock/issues) or [a pull request](https://github.com/mozilla/bedrock/pulls) if you would like to contribute. :-)</small>

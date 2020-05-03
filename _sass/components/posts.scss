@@ -12,6 +12,7 @@
 }
 
 .post-list-heading {
+    @include relative-font-size(1.7);
     font-family: $pixel-font;
     color: $text-color;
     text-align: center;
