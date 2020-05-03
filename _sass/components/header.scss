@@ -63,29 +63,25 @@
         background-color: $secondary-brand-color;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
         position: absolute;
-        right: $spacing-unit / 2;
-        text-align: right;
-        top: 9px;
+        right: $spacing-unit/2;
+        top: 5px;
         z-index: 2;
         
         label[for="nav-trigger"] {
+            box-sizing: border-box;
+            cursor: pointer;
             display: block;
             float: right;
-            width: 36px;
-            height: 36px;
-            z-index: 2;
-            cursor: pointer;
+            height: 48px;
+            padding: 12px;
+            width: 48px;
         }
         
         .menu-icon {
             background: $secondary-brand-color;
             display: block;
-            float: right;
-            height: 26px;
             line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-            width: 36px;
+            margin: 0 auto;
             
             > svg {
                 fill: $text-color;
