@@ -12,7 +12,7 @@
 */ 
 
 #about-banners {
-  margin: 0;
+  margin: 5px;
   
   li {
     margin: 0;
@@ -25,26 +25,12 @@
   text-decoration: underline;
 }
 
-#raccoon-gif {
-  width: 300px;
-  float: left;
-
-  @include media-query($on-palm) {
-    float: none;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  figcaption {
-    color: $text-color;
-    font-style: italic;
-  }
-}
-
 .social-list, li {
   list-style: none;
+
+  > a {
+    text-decoration: none;
+  }
 }
 
 /**
@@ -66,10 +52,6 @@
   display: inline-block;
   padding: $spacing-unit;
   margin: 0 auto;
-
-  h1, h2 {
-    font-family: $pixel-font;
-  }
 }
 
 .md-section {

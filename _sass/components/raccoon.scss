@@ -1,0 +1,18 @@
+#raccoon {
+    width: 300px;
+    float: left;
+    position: relative;
+
+    @include media-query($on-palm) {
+        float: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        color: $text-color;
+        font-style: italic;
+    }
+}

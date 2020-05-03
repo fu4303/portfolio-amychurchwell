@@ -89,7 +89,7 @@ figcaption {
 ul, ol {
   margin-left: $spacing-unit;
 
-  &:not(&.post-content, &.post-container) {
+  &.unstyled {
     margin-left: 0;
   }
 }
@@ -98,10 +98,11 @@ li {
   > ul,
   > ol {
     margin-bottom: 0;
+    list-style: none;
   }
 
-  &:not(&.post-content) {
-    list-style: none;
+  > .post-content {
+    list-style: round;
   }
 }
 
@@ -115,8 +116,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {
-  &:not(&.post-content) {
-    font-family: $pixel-font;
+  font-family: $pixel-font;
+
+  > .post-content {
+    font-family: unset;
   }
 }
 
