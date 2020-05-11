@@ -1,7 +1,8 @@
-personal blog :construction: WIP.
+amychurchwell.com
 ---
-jekyll & github pages.
-https://amychurchwell.com
+:cherry_blossom: A [personal blog](https://amychurchwell.com) built with jekyll & github pages. :cherry_blossom:
+
+[![Build Status](https://travis-ci.org/amychurchwell/amychurchwell.com.svg?branch=master)](https://travis-ci.org/amychurchwell/amychurchwell.com)
 
 ### installation.
 
