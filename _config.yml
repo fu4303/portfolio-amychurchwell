@@ -1,13 +1,12 @@
 title: blog of amy
 email: amychurchwell@protonmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Amy Churchwell is a front end web developer in Portland, Oregon.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://amychurchwell.com"
 twitter_username: amychurchwell
 github_username:  amychurchwell
 
-# Build settings
 markdown: kramdown
 hylighter: pygments
 
@@ -26,11 +25,8 @@ header_pages:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - [vendor]
