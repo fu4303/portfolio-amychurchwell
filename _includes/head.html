@@ -46,6 +46,7 @@
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
 
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' -%}
