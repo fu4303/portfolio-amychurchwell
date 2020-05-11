@@ -9,7 +9,7 @@ No plugins required.
 '''
 
 '''
-(I have tweaked Long's code for my own purposes)
+(I have tweaked this code for my own purposes -- amy)
 '''
 
 import glob
