@@ -78,12 +78,9 @@
   }
   
   .rss-subscribe {
-    margin-left: $spacing-unit;
-
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
+    display: inline-block;
+    font-size: $small-font-size;
+    margin: ($spacing-unit / 2) $spacing-unit;
   }
 }
 
