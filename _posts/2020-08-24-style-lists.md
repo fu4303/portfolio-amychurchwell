@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Display list item <li> number on a different element"
-description: ""
+title:  "Display list item number on a different element"
+description: "Using a custom CSS counter to display list number on an element that is not a list item <li>"
 categories: tech
-tags: [html, css]
+tags: css
 ---
 
 ![screenshot](/assets/img/posts/style-lists/list-style.png)

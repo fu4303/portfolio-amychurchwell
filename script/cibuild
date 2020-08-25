@@ -2,5 +2,5 @@
 set -e # halt script on error
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site
 python3 ./script/tag_generator.py
+bundle exec htmlproofer ./_site
