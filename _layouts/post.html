@@ -8,7 +8,7 @@ layout: default
         {% if page.tags.size > 0 %}
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
-            <span class="post-tag"><a href="{{ site.url | absolute_url }}/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+            <span class="post-tag"><a href="{{ relative_url }}/tag/{{ tag_name }}">{{ tag_name }}</a></span>
           {% endfor %}
         {% endif %}
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>

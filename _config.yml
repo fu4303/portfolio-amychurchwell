@@ -14,7 +14,7 @@ sass:
   sass_dir: _sass
   style: compact
 
-permalink: /:categories/:year/:month/:day/:title
+permalink: pretty
 
 plugins:
   - jekyll-feed
