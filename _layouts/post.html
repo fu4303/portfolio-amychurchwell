@@ -17,12 +17,12 @@ layout: default
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             {{ page.date | date: date_format }}
           </time>
+          {%- if page.hero -%}
+          <div class="post-hero"></div>
+          {%- endif -%}
       </header>
     
       <div class="post-content e-content" itemprop="articleBody">
-        {%- if page.image -%}
-        <img src="{{ page.image }}" alt="test" class="post-image">
-        {%- endif -%}
         {{ content }}
         <small>/amy</small>
         <p class="bug-note">☆ See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a> ☆</p>

@@ -96,15 +96,18 @@
     img {
         display: block;
         margin: 20px auto;
-        max-width: 80%;
+        max-width: 100%;
     }
 
     h2, h3, h4, h5, h6 {
         color: $text-color;
         background: lighten($background-color, 5%);
-        padding: 10px;
+        display: inline-block;
+        padding: 10px 20px;
         font-weight: 500;
+        font-family: $pixel-font;
         margin: $spacing-unit 0;
+        max-width: 100%;
     }
     
     h2 {
