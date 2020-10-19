@@ -3,7 +3,6 @@ layout: post
 title:  "First backpacking camping trip"
 description: "My first backpacking camping trip"
 tags: camping hiking travel
-hero: '/assets/img/posts/hiking/hiking.jpg'
 ---
 
 My super woodsy sister provided a lot of guidance when helping me prepare for my trip. She is extremely knowledable about the outdoors and recommended this hike and a lot of the gear I took with me. Thanks again, Katie! 💜
@@ -23,7 +22,7 @@ However, we did encounter a black bear on the third day! It was eating berries o
 
 Much of the trail follows **Ingalls Creek**, which is very convenient for retrieving water and provides a pleasant breeze. There are also leftover campsites scattered along the way, which takes a lot of the guesswork out of finding a suitable place to camp. There was a burn ban in place because in late summer everything is so dry, which was fine because we had the stove kit and a fuel can (no need to make a fire pit). There were several fallen trees across the trail. I saw many dead trees rattling in the wind in parts, so it's only natural they would regularly break apart and fall down the sloped landscape. A lot of trees had scorch marks.
 
-Overall, it was a beautiful hike. Physically challenging but it felt good to be outside and active after spending so much time indoors due to the international pandemic of [Coronavirus](https://www.cdc.gov/coronavirus/2019-ncov/). It was very easily to socially distance, only running into two groups of 2-3 hikers.
+Overall, it was a beautiful hike. Physically challenging but it felt good to be outside and active after spending so much time indoors due to the international pandemic of [Coronavirus](https://www.cdc.gov/coronavirus/2019-ncov/). It was very easy to socially distance, only running into two groups of 2-3 hikers.
 
 On my previous hikes, my right knee would usually start acting up around mile 6 but after getting trekking poles per my doctor's advice I can now easily hike twice the distance before my knee starts aching. Taking ibuprofen (and the occasional CBD gummy 😉) helped.
 
