@@ -80,8 +80,8 @@
         }
         
         .menu-icon {
-            background: $secondary-brand-color;
-            background-image: url('/assets/menu.svg');
+            background: url('/assets/icons/menu.svg') $secondary-brand-color center no-repeat;
+            background-size: contain;
             display: block;
             line-height: 0;
             margin: 0 auto;

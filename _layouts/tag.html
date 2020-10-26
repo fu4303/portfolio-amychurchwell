@@ -6,14 +6,14 @@ layout: default
         <header class="post-header">
             <h1 class="post-title">Tag: {{ page.tag | escape }}</h1>
         </header>
-        <div class="post-content">
-            <ul>
-                {% for post in site.tags[page.tag] %}
-                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-                    {{ post.description | escape }}
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+        <ul class="unstyled">
+            {% for post in site.tags[page.tag] %}
+            <li>
+                <i class="sf sf--tag"></i>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+                {{ post.description | escape }}
+            </li>
+            {% endfor %}
+        </ul>
     </article>
 </div>
