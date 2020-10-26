@@ -13,8 +13,9 @@
 
 .post-list-heading {
     @include relative-font-size(1.7);
-    font-family: $pixel-font;
     color: $text-color;
+    font-family: $pixel-font;
+    margin: 0;
     text-align: center;
 }
 
@@ -31,6 +32,7 @@
         margin-bottom: $spacing-unit / 2;
         
         h3 {
+            box-sizing: border-box;
             display: inline-block;
             line-height: 1;
             margin: ($spacing-unit/3) 0 0;
@@ -39,25 +41,30 @@
 }
 
 .post-meta {
-    display: block;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: bold;
+    @include relative-font-size(0.6);
+    color: $brand-color;
+    display: inline-block;
+    width: 100px;
+
+    &:after {
+        content: ']';
+    }
+
+    &:before {
+        content: '[';
+    }
 }
 
 .post-tag {
-    background: lighten($background-color, 5%);
-    border-radius: 2px;
-    border: 1px solid rgba(126,126,126,.6);
-    color: $text-color;
-    cursor: pointer;
-    font-size: $small-font-size;
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding: 3px 10px;
-    
     a {
-        background: transparent;
+        @include relative-font-size(0.6);
+        background: lighten($background-color, 5%);
+        border-radius: 2px;
+        border: 1px solid rgba(126,126,126,.6);
+        color: $text-color;
+        cursor: pointer;
+        letter-spacing: 2px;
+        padding: 3px 10px;
         text-decoration: none;
     }
     
@@ -66,12 +73,12 @@
     }
 }
 
-.post-link {
+a.post-link {
+    @include relative-font-size(1);
     color: $text-color;
     font-family: $pixel-font;
-    margin-right: 12px;
     text-decoration: none;
-    text-transform: uppercase;
+    margin-right: 20px;
 }
 
 .post-header {

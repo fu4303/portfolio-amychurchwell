@@ -1,22 +1,32 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
-
 // Silkscreen is a font by Jason Kottke (jason@kottke.org).
 // http://www.kottke.org/plus/type/silkscreen/index.html
-// Thanks, Jason!
 
 @font-face {
-  font-family: "pixel";
+  font-family: 'pixel';
+  src: url('../../assets/fonts/slkscr.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  src: url("../../assets/fonts/slkscr.ttf");
   font-display: swap;
 }
 
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// Fipps is a font by Pheist
+// https://pheist.net
+
+@font-face {
+  font-family: 'fippsregular';
+  src: url('../../assets/fonts/fipps-regular-webfont.woff') format('woff'),
+       url('../../assets/fonts/fipps-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$base-font-family: -apple-system, BlinkMacSystemFont, Verdana, Helvetica, sans-serif, "Apple Color Emoji" !default;
 
 $pixel-font: "pixel", "monospace";
-$pixel-expanded: "pixel-expanded", "monospace";
+$pixel-drop-shadow: "fippsregular", "monospace";
 
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
