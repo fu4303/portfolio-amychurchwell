@@ -36,3 +36,4 @@ deploy:
   on:
     branches: 
       - master
+      - gh-pages
