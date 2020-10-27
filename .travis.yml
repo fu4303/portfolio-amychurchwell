@@ -35,5 +35,4 @@ deploy:
   keep_history: true
   on:
     branches: 
-      - master
       - gh-pages
