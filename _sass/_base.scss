@@ -24,7 +24,7 @@ body {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   display: flex;
-  min-height: 100vh;
+  max-height: 100vh;
   flex-direction: column;
 
   // dotted pattern
@@ -88,6 +88,10 @@ figcaption {
 ul, ol {
   margin-left: $spacing-unit;
 
+  @include media-query($on-palm) {
+    margin-left: $spacing-unit/2;
+  }
+
   &.unstyled {
     margin-left: 0;
     list-style: none;
@@ -114,14 +118,11 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: unset;
+  letter-spacing: .03em;
 }
 
 h1, h2 {
   font-family: $pixel-font;
-
-  > .post-content {
-    font-family: unset;
-  }
 }
 
 
@@ -132,6 +133,8 @@ h1, h2 {
 
 a {
   color: $text-color;
+  text-decoration: none;
+  transition: all 0.4s ease;
 
   &:visited {
     text-decoration: underline;
@@ -160,40 +163,6 @@ blockquote {
   }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $text-color;
-  border-radius: 3px;
-}
-
-code {
-  padding: 1px 5px;
-  white-space: pre-wrap;
-  word-wrap: break-word; 
-  
-  .tags {
-    color: $text-color;
-  }
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
 /**
  * Wrapper
  */
@@ -202,15 +171,18 @@ pre {
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding: 0 $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding: 0 $spacing-unit / 2;
+    padding: $spacing-unit / 2;
+  }
+
+  @include media-query($on-palm) {
+    padding: 0 $spacing-unit / 4;
   }
 }
 

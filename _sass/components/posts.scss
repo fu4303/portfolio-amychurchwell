@@ -36,6 +36,10 @@
             display: inline-block;
             line-height: 1;
             margin: ($spacing-unit/3) 0 0;
+
+            @include media-query($on-palm) {
+                @include relative-font-size(1.5);
+            }
         }
     }
 }
@@ -53,6 +57,11 @@
     &:before {
         content: '[';
     }
+
+    @include media-query($on-palm) {
+        display: block;
+        margin-top: 15px;
+    }
 }
 
 .post-tag {
@@ -66,15 +75,19 @@
         letter-spacing: 2px;
         padding: 3px 10px;
         text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
     }
-    
-    &:hover {
-        font-weight: bold;
+
+    @include media-query($on-palm) {
+        display: block;
     }
 }
 
 a.post-link {
-    @include relative-font-size(1);
+    @include relative-font-size(1.1);
     color: $text-color;
     font-family: $pixel-font;
     text-decoration: none;
@@ -83,14 +96,20 @@ a.post-link {
 
 .post-header {
     margin-bottom: $spacing-unit;
+    border-bottom: 2px solid rgba(126,126,126,.6);
+
+    .post-tag {
+        display: block;
+    }
 }
 
 .post-title {
     @include relative-font-size(2);
-    display: inline;
+    display: inline-block;
     font-family: $pixel-font;
     line-height: 1;
     text-transform: lowercase;
+    vertical-align: middle;
     
     @include media-query($on-laptop) {
         @include relative-font-size(2.25);
@@ -100,6 +119,15 @@ a.post-link {
 .post-content {
     font-size: $small-font-size;
     margin-bottom: $spacing-unit;
+
+    a {
+        padding-bottom: 1px;
+        border-bottom: 1px solid rgba(126,126,126,.6);
+
+        &:hover {
+            padding: 3px 0;
+        }
+    }
     
     img {
         display: block;
@@ -108,13 +136,14 @@ a.post-link {
     }
 
     h2, h3, h4, h5, h6 {
-        color: $text-color;
         background: lighten($background-color, 5%);
+        color: $text-color;
         display: inline-block;
-        padding: 10px 20px;
         font-family: $pixel-font;
         margin: $spacing-unit 0;
         max-width: 100%;
+        padding: 10px 20px;
+        text-transform: uppercase;
     }
     
     h2 {

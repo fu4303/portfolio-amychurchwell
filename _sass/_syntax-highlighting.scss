@@ -1,10 +1,42 @@
 /**
+ * Code formatting
+ */
+ pre,
+ code {
+   @include relative-font-size(0.9375);
+   border: 2px solid rgba(126,126,126,.6);
+ }
+ 
+ code {
+   padding: 1px 5px;
+   white-space: pre-wrap;
+   word-wrap: break-word; 
+   
+   .tags {
+     color: $text-color;
+   }
+ }
+ 
+ pre {
+   padding: 8px 12px;
+   overflow-x: auto;
+   margin-bottom: 2px;
+ 
+   > code {
+     border: 0;
+     padding-right: 0;
+     padding-left: 0;
+   }
+ }
+ 
+
+/**
  * Syntax highlighting styles
  */
-.highlight {
+div.highlight {
   background: #fff;
   @extend %vertical-rhythm;
-
+  
   .highlighter-rouge & {
     color: $text-color;
     background: #eef;

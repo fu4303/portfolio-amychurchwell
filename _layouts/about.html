@@ -9,9 +9,8 @@ layout: default
     </header>
     <div>
       {%- include raccoon.html -%}
-      <p>
-        {{ content }}
-      </p>
+      <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
+      {{ content }}
     </div>
     {%- include social.html -%}
   </article>
@@ -24,5 +23,8 @@ layout: default
     <a href="https://www.mozilla.org/firefox/new/">
       <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
     </a>
+  </li>
+  <li>
+    <img src="{{ '/assets/img/hairdays.png' | relative_url }}" alt="there are no bad hair days on the internet">
   </li>
 </ul>

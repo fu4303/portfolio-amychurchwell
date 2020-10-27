@@ -72,9 +72,17 @@
   overflow: auto;
   padding: 5px;
   position: relative;
+
+  @include media-query($on-palm) {
+    margin: $spacing-unit/2 0;
+  }
   
   article {
     margin: $spacing-unit;
+
+    @include media-query($on-palm) {
+      margin: $spacing-unit/2;
+    }
   }
   
   .rss-subscribe {
