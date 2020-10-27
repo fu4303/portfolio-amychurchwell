@@ -6,10 +6,12 @@ layout: default
     <article>
       <header class="post-header">
         {% if page.tags.size > 0 %}
+          <span class="post-tag">
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
-            <span class="post-tag"><a href="{{ relative_url }}/tag/{{ tag_name }}">{{ tag_name }}</a></span>
+            <a href="{{ relative_url }}/tag/{{ tag_name }}">{{ tag_name }}</a>
           {% endfor %}
+          </span>
         {% endif %}
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
         <p class="post-meta">

@@ -87,6 +87,7 @@ a.post-link {
 
 .post-title {
     @include relative-font-size(2);
+    display: inline;
     font-family: $pixel-font;
     line-height: 1;
     text-transform: lowercase;
@@ -111,7 +112,6 @@ a.post-link {
         background: lighten($background-color, 5%);
         display: inline-block;
         padding: 10px 20px;
-        font-weight: 500;
         font-family: $pixel-font;
         margin: $spacing-unit 0;
         max-width: 100%;

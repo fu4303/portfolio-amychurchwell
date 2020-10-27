@@ -1,17 +1,20 @@
 @charset "utf-8";
 
-// Silkscreen is a font by Jason Kottke (jason@kottke.org).
-// http://www.kottke.org/plus/type/silkscreen/index.html
+// proggy is a monospace font for programming
+// https://github.com/bluescan/proggyfonts
+
+// ran through fontsquirrel webfont generator
+// https://www.fontsquirrel.com/tools/webfont-generator
 
 @font-face {
   font-family: 'pixel';
-  src: url('../../assets/fonts/slkscr.ttf') format('truetype');
+  src: url('../../assets/fonts/proggysquaresz-webfont.woff2') format('woff2'),
+       url('../../assets/fonts/proggysquaresz-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
-// Fipps is a font by Pheist
+// fipps is a font by Pheist
 // https://pheist.net
 
 @font-face {
@@ -25,11 +28,10 @@
 
 $base-font-family: -apple-system, BlinkMacSystemFont, Verdana, Helvetica, sans-serif, "Apple Color Emoji" !default;
 
-$pixel-font: "pixel", "monospace";
-$pixel-drop-shadow: "fippsregular", "monospace";
+$pixel-font: "pixel", monospace;
+$pixel-drop-shadow: "fippsregular", monospace;
 
 $base-font-size:   16px !default;
-$base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
