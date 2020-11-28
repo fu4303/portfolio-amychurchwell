@@ -2,7 +2,6 @@
 layout: post
 title:  "Convert a raster image to svg in photoshop"
 description: "Use Adobe Photoshop to convert a raster image to SVG format."
-categories: tech
 tags: photoshop
 ---
 

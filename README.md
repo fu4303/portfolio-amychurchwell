@@ -24,3 +24,6 @@ amychurchwell.com
  ### resources.
  - [Jekyll](https://jekyllrb.com/)
  - [post tags](https://longqian.me/2017/02/09/github-jekyll-tag/)
+
+ #### assets.
+ - [Sudofont](https://github.com/Sudomemo/Sudofont). Nintendo DS icon font.

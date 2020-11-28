@@ -14,7 +14,7 @@ sass:
   sass_dir: _sass
   style: compact
 
-permalink: pretty
+permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
@@ -33,4 +33,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-

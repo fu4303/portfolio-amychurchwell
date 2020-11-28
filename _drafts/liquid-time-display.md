@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Display time-based content using Liquid"
-categories: [tech]
 tags: [jekyll, liquid]
 ---
 
