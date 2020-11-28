@@ -6,12 +6,13 @@ layout: default
     <article>
       <header class="post-header">
         {% if page.tags.size > 0 %}
-          <span class="post-tag">
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
-            <a href="{{ relative_url }}/tag/{{ tag_name }}">{{ tag_name }}</a>
+            <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+              <i class="sf sf--tag"></i>
+              {{ tag_name }}
+            </a>
           {% endfor %}
-          </span>
         {% endif %}
         <p class="post-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
