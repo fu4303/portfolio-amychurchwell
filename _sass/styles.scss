@@ -1,17 +1,18 @@
 @charset "utf-8";
 
-// proggy is a monospace font for programming
-// https://github.com/bluescan/proggyfonts
+// silkscreen is a font by Jason Kottke
+// https://www.kottke.org
 
 // ran through fontsquirrel webfont generator
 // https://www.fontsquirrel.com/tools/webfont-generator
 
 @font-face {
   font-family: 'pixel';
-  src: url('../../assets/fonts/proggysquaresz-webfont.woff2') format('woff2'),
-       url('../../assets/fonts/proggysquaresz-webfont.woff') format('woff');
+  src: url('../../assets/fonts/slkscre-webfont.woff2') format('woff2'),
+       url('../../assets/fonts/slkscre-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 // fipps is a font by Pheist

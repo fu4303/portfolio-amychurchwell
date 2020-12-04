@@ -16,38 +16,37 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <section class="container">
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <div class="post-container">
-        <ul class="post-list">
-          {%- for post in site.posts -%}
-          <li>
-            <div class="post-link">
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          <div class="post-link">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
 
-              <a href="{{ post.url | relative_url }}">
-                <h3>{{ post.title | escape }}</h3>
-              </a>
+            {% if post.description %}
+              <p>{{ post.description | escape }}</p>
+            {% endif %}
+          </div>
+          
+          {% for tag in post.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+              <i class="sf sf--tag"></i>
+              {{ tag_name }}
+            </a>
+          {% endfor %}
 
-              {% if post.description %}
-                <p>{{ post.description | escape }}</p>
-              {% endif %}
-            </div>
-            
-            {% for tag in post.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
-                <i class="sf sf--tag"></i>
-                {{ tag_name }}
-              </a>
-            {% endfor %}
-
-            {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
-            {%- endif -%}
-          </li>
-          {%- endfor -%}
-        </ul>
-      </div>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
       <!-- <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
     </section>
   {%- endif -%}

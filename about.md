@@ -4,4 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Hello! My name is Amy Churchwell. I am a front-end developer at [Mozilla](https://mozilla.org) --we are on a mission to ensure the web is open and accessible to all. I live and work in Portland, Oregon. USA.
+Hello! My name is Amy Churchwell. My pronouns are [she](https://pronoun.is/she)/[her](https://pronoun.is/her).
+
+I am a front-end developer at [Mozilla](https://mozilla.org) --we are on a mission to ensure the web is open and accessible to all.
+
+When I am not writing code I like to hike trails, practice yoga, study Japanese, and watch Star Trek.

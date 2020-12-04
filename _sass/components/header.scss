@@ -50,9 +50,11 @@
     }
     
     .page-link {
+        @include relative-font-size(1.1);
         color: $text-color;
         line-height: $base-line-height;
-        font-family: monospace;
+        font-family: $pixel-font;
+        text-decoration: none;
         
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
