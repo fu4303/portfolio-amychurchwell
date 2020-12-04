@@ -25,8 +25,8 @@ notifications:
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
+  strategy: git
   keep_history: true
   on:
     branch: master
