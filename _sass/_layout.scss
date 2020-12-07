@@ -12,6 +12,7 @@
 */ 
 
 #about-banners {
+  padding: $spacing-unit/4;
   margin: 5px;
   
   li {
@@ -19,6 +20,11 @@
     display: inline-block;
     list-style: none;
   }
+}
+
+.info-card {
+  display: inline-block;
+  border: 1px solid black;
 }
 
 .u-email {

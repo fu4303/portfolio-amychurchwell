@@ -8,23 +8,32 @@ layout: default
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
     <div>
-      {%- include raccoon.html -%}
+      <figure id="raccoon">
+        <img src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
+        <figcaption>
+            <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
+        </figcaption>
+      </figure>
+
       <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
       {{ content }}
     </div>
-    {%- include social.html -%}
   </article>
+
+  {%- include social.html -%}
+
+  <ul id="about-banners">
+    <li>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
+    </li>
+    <li>
+      <a href="https://www.mozilla.org/firefox/new/">
+        <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
+      </a>
+    </li>
+    <li>
+      <img src="{{ '/assets/img/hairdays.png' | relative_url }}" alt="there are no bad hair days on the internet">
+    </li>
+  </ul>
+
 </div>
-<ul id="about-banners">
-  <li>
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
-  </li>
-  <li>
-    <a href="https://www.mozilla.org/firefox/new/">
-      <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
-    </a>
-  </li>
-  <li>
-    <img src="{{ '/assets/img/hairdays.png' | relative_url }}" alt="there are no bad hair days on the internet">
-  </li>
-</ul>

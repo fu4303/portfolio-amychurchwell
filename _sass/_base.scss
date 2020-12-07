@@ -118,7 +118,6 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: unset;
-  letter-spacing: .03em;
 }
 
 h1, h2 {
@@ -220,7 +219,7 @@ table {
   color: $text-color;
   margin-bottom: $spacing-unit;
   text-align: $table-text-align;
-  width: 100%;
+  max-width: 100%;
 
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);

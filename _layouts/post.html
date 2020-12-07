@@ -5,31 +5,32 @@ layout: default
   <div class="container">
     <article>
       <header class="post-header">
-        {% if page.categories.size > 0 %}
-          <p class="post-category"><i class="sf sf--note"></i> category: {{ page.categories }}</p>
-        {% endif %}
-
         {% if page.date %}
-        <p class="post-meta">
-          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          <time class="post-category dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <i class="sf sf--calendar sf--lg"></i>
             {{ page.date | date: date_format }}
           </time>
-        </p>
         {% endif %}
 
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-
-        {% if page.tags.size > 0 %}
-          {% for tag in page.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
-              <i class="sf sf--tag"></i>
-              {{ tag_name }}
-            </a>
-          {% endfor %}
+        
+        {% if page.categories.size > 0 %}
+        <p class="post-category"><i class="sf sf--note sf--lg"></i> category: {{ page.categories }}</p>
         {% endif %}
 
+        {% if page.tags.size > 0 %}
+        <div>
+          {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+                <i class="sf sf--tag"></i>
+                {{ tag_name }}
+              </a>
+          {% endfor %}
+        </div>
+        {% endif %}
+        
         {%- if page.hero -%}
           <div class="post-hero"></div>
         {%- endif -%}
