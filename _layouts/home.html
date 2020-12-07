@@ -9,10 +9,6 @@ layout: default
 
   {{ content }}
 
-  <!-- {% for post in site.categories.personal %}
-    <h3>{{ post.title }}</h3>
-  {% endfor %} -->
-
   {%- if site.posts.size > 0 -%}
     <section class="container">
       <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
@@ -23,6 +19,9 @@ layout: default
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h3>
+                {% if post.list %}
+                <i class="sf sf--th-list"></i>
+                {% endif %}
                 <a href="{{ post.url | relative_url }}">
                   {{ post.title | escape }}
                 </a>

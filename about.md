@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /about/
+icon: user-card
 ---
 
 Hello! My name is Amy Churchwell. My pronouns are [she](https://pronoun.is/she)/[her](https://pronoun.is/her).

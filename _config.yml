@@ -18,6 +18,11 @@ permalink: /:categories/:title
 
 plugins:
   - jekyll-feed
+
+collections: 
+  japanese:
+    output: true
+
   
 header_pages:
   - about.md
