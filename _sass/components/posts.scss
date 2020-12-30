@@ -15,6 +15,22 @@
     text-align: center;
 }
 
+.pager {
+    display: inline-block;
+    margin: 0;
+    padding: $spacing-unit;
+    transition: 150ms cubic-bezier(0.215,0.61,0.355,1);
+
+    li {
+        list-style: none;
+        font-family: $pixel-font;
+        
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
 .post-list {
     list-style: none;
     margin-left: 0;
@@ -80,7 +96,6 @@
     margin-right: $spacing-unit/3;
     padding: 3px 10px;
     text-decoration: none;
-    transition: all 0.5s ease;
 
     &:hover {
         background-color: lighten($background-color, 10%);
@@ -91,7 +106,7 @@
     margin-bottom: $spacing-unit / 2;
     max-width: 100%;
 
-    p {
+    p, em {
         @include relative-font-size(0.9);
         color: $text-color;
         margin: 0;

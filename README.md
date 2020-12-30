@@ -1,10 +1,11 @@
 amychurchwell.com
 ---
-:cherry_blossom: A [personal blog](https://amychurchwell.com) built with jekyll & github pages. :cherry_blossom:
+:cherry_blossom: A [personal blog](https://amychurchwell.com) built with [Jekyll](https://jekyllrb.com/) & GitHub pages. :cherry_blossom:
 
 [![Build Status](https://travis-ci.org/amychurchwell/amychurchwell.com.svg?branch=master)](https://travis-ci.org/amychurchwell/amychurchwell.com)
 
 ### installation.
+
 
 ```
  gem install bundler

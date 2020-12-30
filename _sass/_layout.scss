@@ -9,7 +9,7 @@
 
 /**
 * About Page
-*/ 
+*/
 
 #about-banners {
   padding: $spacing-unit/4;
@@ -27,21 +27,26 @@
   border: 1px solid black;
 }
 
-.u-email {
-  text-decoration: underline;
-}
+.social-list {
+  margin: $spacing-unit;
 
-.social-list li {
-  list-style: none;
+  ul {
+    margin: 0;
+  }
 
-  > a {
-    text-decoration: none;
+  li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
 /**
 * Page content
 */
+
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
@@ -54,7 +59,6 @@
 .sm-section, .md-section {
   background: $container-background;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
   display: inline-block;
   padding: $spacing-unit;
   margin: 0 auto;
@@ -73,10 +77,8 @@
 .container {
   background-color: $container-background;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
   margin: $spacing-unit 0;
   overflow: auto;
-  padding: 5px;
   position: relative;
 
   @include media-query($on-palm) {

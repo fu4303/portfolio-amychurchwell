@@ -1,7 +1,7 @@
 title: blog of amy
 email: amychurchwell@protonmail.com
 description: >-
-  Amy Churchwell is a front end web developer in Portland, Oregon.
+  Amy Churchwell is a software engineer in Portland, Oregon.
 baseurl: ""
 url: "https://amychurchwell.com"
 twitter_username: amychurchwell
@@ -19,14 +19,22 @@ permalink: /:categories/:title
 plugins:
   - jekyll-feed
 
-collections: 
-  japanese:
-    output: true
-
-  
 header_pages:
   - about.md
 
+pagination:
+  enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 5
+  permalink: '/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+  indexpage: 'index'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

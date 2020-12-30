@@ -38,17 +38,6 @@ layout: default
     
       <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
-
-        {% if page.list %}
-        <ul>
-          {% for post in site.[page.list] %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-
         <small>/amy</small>
         <p class="bug-note">☆ See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a> ☆</p>
       </div>

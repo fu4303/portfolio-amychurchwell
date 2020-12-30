@@ -1,52 +1,60 @@
 ---
 layout: default
 ---
-
-<main class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <section class="container">
-      <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          <div class="post-link">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-              <h3>
-                {% if post.list %}
-                <i class="sf sf--th-list"></i>
-                {% endif %}
-                <a href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-              </h3>
-
-            {% if post.description %}
-              <p>{{ post.description | escape }}</p>
-            {% endif %}
-          </div>
-          
-          {% for tag in post.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
-              <i class="sf sf--tag"></i>
-              {{ tag_name }}
+  <section class="container">
+    {%- if paginator.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="h-feed post-list">
+      {%- for post in paginator.posts -%}
+      <li>
+        <div class="post-link">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
             </a>
-          {% endfor %}
+          </h3>
 
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+          {% if post.description %}
+            <p class="p-summary">{{ post.description | escape }}</p>
+          {% endif %}
+        </div>
+        
+        {% for tag in post.tags %}
+          {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+            <i class="sf sf--tag"></i>
+            {{ tag_name }}
+          </a>
+        {% endfor %}
+
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+    
+    <!-- <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
+
+    {% if paginator.total_pages > 1 %}
+      <ul class="pager">
+        <li class="previous">
+          {% if paginator.previous_page == 1 %}
+            <a href="{{ "/" | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
+            {% else %}
+            <a href="{{ paginator.previous_page | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
+          {% endif %}
         </li>
-        {%- endfor -%}
+        
+        {% if paginator.next_page %}
+          <li class="next">
+            <a href="{{ paginator.next_page | relative_url }}">Older Posts <i class="sf sf--arrow-right sf--lg"></i></a>
+          </li>
+        {% endif %}
       </ul>
-      <!-- <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
-    </section>
+    {% endif %}
   {%- endif -%}
+  </section>
 </main>
