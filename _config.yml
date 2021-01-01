@@ -16,6 +16,9 @@ sass:
 
 permalink: /:categories/:title
 
+gems:
+  - jekyll-paginate-v2
+
 plugins:
   - jekyll-feed
 
