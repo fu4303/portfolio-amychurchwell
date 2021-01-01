@@ -2,7 +2,6 @@
 layout: default
 ---
   <section class="container">
-    {%- if paginator.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="h-feed post-list">
       {%- for post in paginator.posts -%}
@@ -55,6 +54,5 @@ layout: default
         {% endif %}
       </ul>
     {% endif %}
-  {%- endif -%}
   </section>
 </main>
