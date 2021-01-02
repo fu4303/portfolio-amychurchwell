@@ -16,18 +16,12 @@ sass:
 
 permalink: /:categories/:title
 
-gems:
-  - jekyll-paginate-v2
-
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
 header_pages:
   - about.md
-
-# Explicitly turn off the old code
-paginate: nil
-paginate_path: nil
 
 pagination:
   enabled: true
