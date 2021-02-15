@@ -14,9 +14,12 @@ layout: default
         {% endif %}
 
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        
+
         {% if page.categories.size > 0 %}
-        <p class="post-category"><i class="sf sf--note sf--lg"></i> category: {{ page.categories }}</p>
+        <p class="post-category">
+          <i class="sf sf--note sf--lg"></i>
+          category: {{ page.categories }}
+        </p>
         {% endif %}
 
         {% if page.tags.size > 0 %}
@@ -30,15 +33,17 @@ layout: default
           {% endfor %}
         </div>
         {% endif %}
-        
+
         {%- if page.hero -%}
           <div class="post-hero"></div>
         {%- endif -%}
       </header>
-    
+
       <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
-        <small>/amy</small>
+        <small>
+          /<a rel="author" class="p-author" href="…">amy</a>
+        </small>
         <p class="bug-note">See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a></p>
       </div>
     </article>

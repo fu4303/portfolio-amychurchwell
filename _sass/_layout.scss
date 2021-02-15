@@ -63,7 +63,7 @@ footer {
       margin: $spacing-unit/2;
     }
   }
-  
+
   .rss-subscribe {
     display: inline-block;
     font-size: $small-font-size;
@@ -71,6 +71,3 @@ footer {
   }
 }
 
-.h-card {
-  @include relative-font-size(0.9);
-}
