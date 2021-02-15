@@ -13,7 +13,9 @@ layout: default
           </time>
         {% endif %}
 
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <a href="{{ page.url }}">
+          <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        </a>
 
         {% if page.categories.size > 0 %}
         <p class="post-category">
@@ -26,7 +28,7 @@ layout: default
         <div>
           {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+              <a class="post-tag p-category" href="{{ relative_url }}/tag/{{ tag_name }}">
                 <i class="sf sf--tag"></i>
                 {{ tag_name }}
               </a>
@@ -42,7 +44,7 @@ layout: default
       <div class="post-content e-content" itemprop="articleBody">
         {{ content }}
         <small>
-          /<a rel="author" class="p-author" href="…">amy</a>
+          /<a rel="author" class="p-author h-card" href="{{ "/" | relative_url }}">amy</a>
         </small>
         <p class="bug-note">See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a></p>
       </div>
