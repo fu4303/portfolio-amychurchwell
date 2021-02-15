@@ -38,6 +38,10 @@ footer {
   width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
   width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
   margin: 0 auto;
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
 }
 
 .sm-section {
@@ -55,7 +59,7 @@ footer {
   @include media-query($on-palm) {
     margin: $spacing-unit/2 0;
   }
-  
+
   article {
     margin: $spacing-unit;
 
