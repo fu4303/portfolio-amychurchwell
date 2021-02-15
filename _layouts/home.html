@@ -1,7 +1,28 @@
 ---
 layout: default
 ---
-  <section class="container">
+  <section class="h-card md-section">
+    <figure id="raccoon">
+      <img class="u-logo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
+      <figcaption>
+          <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
+      </figcaption>
+    </figure>
+
+    <div>
+      <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
+      <h2>Hello,</h2>
+      <p>
+        My name is <span class="p-name">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>.
+        <br>
+        I am a front-end developer at <a class="p-org" href="https://mozilla.org">Mozilla</a> --we are on a mission to ensure the web is open and accessible to all.
+        <br>
+        When I am not coding I like to hike trails, practice yoga, and watch Star Trek.
+      </p>
+    </div>
+  </section>
+
+  <section class="container md-section">
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="h-feed post-list">
       {% for post in paginator.posts %}
