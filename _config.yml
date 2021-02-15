@@ -6,6 +6,7 @@ baseurl: ""
 url: "https://amychurchwell.com"
 twitter_username: amychurchwell
 github_username:  amychurchwell
+linkedin_username: amychurchwell
 
 markdown: kramdown
 hylighter: pygments

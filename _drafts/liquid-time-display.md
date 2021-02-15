@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Display time-based content using Liquid"
-tags: [jekyll, liquid]
+tags: jekyll liquid
 ---
 
 {% raw %}
