@@ -1,77 +1,78 @@
 ---
 layout: default
 ---
-  <section class="md-section">
-    <figure id="raccoon">
-      <img class="u-logo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
-      <figcaption>
-          <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
-      </figcaption>
-    </figure>
 
-    <div>
-      <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
-      <h2>Hello,</h2>
-      <p class="p-note">
-        My name is <span class="p-name">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>.
-        <br>
-        I am a front-end developer at <a class="p-org" href="https://mozilla.org">Mozilla</a> --we are on a mission to ensure the web is open and accessible to all.
-        <br>
-        When I am not programming I like to hike trails, practice yoga, and watch Star Trek.
-      </p>
-    </div>
-  </section>
+<section class="md-section">
+  <figure id="raccoon">
+    <img class="u-logo u-photo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
+    <figcaption>
+        <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
+    </figcaption>
+  </figure>
 
-  <section class="container md-section">
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="h-feed post-list">
-      {% for post in paginator.posts %}
-      <li>
-        <div class="post-link">
+  <aside>
+    <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
+    <h2>Hello,</h2>
+    <p class="p-note">
+      My name is <span class="p-name p-author">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>.
+      <br>
+      I am a front-end developer at <a class="p-org" href="https://mozilla.org">Mozilla</a> --we are on a mission to ensure the web is open and accessible to all.
+      <br>
+      When I am not programming I like to hike trails, practice yoga, and watch Star Trek.
+    </p>
+  </aside>
+</section>
+
+<section class="container md-section">
+  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <ul class="h-feed post-list">
+    <!-- <a class="rss-subscribe u-url" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
+    {% for post in paginator.posts %}
+    <li>
+      <article class="p-entry post-link">
+        <time class="post-meta dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
+          {{ post.date | date: date_format }}
+        </time>
 
-          {% if post.description %}
-            <p class="p-summary">{{ post.description | escape }}</p>
-          {% endif %}
-        </div>
-
-        {% for tag in post.tags %}
-          {% capture tag_name %}{{ tag }}{% endcapture %}
-          <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
-            <i class="sf sf--tag"></i>
-            {{ tag_name }}
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
           </a>
-        {% endfor %}
+        </h3>
 
-      </li>
-      {% endfor %}
-    </ul>
-
-    {% if paginator.total_pages > 1 %}
-      <ul class="pager">
-        <li class="previous">
-          {% if paginator.previous_page == 1 %}
-            <a href="{{ "/" | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
-            {% else %}
-            <a href="{{ paginator.previous_page | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
-          {% endif %}
-        </li>
-        
-        {% if paginator.next_page %}
-          <li class="next">
-            <a href="{{ paginator.next_page | relative_url }}">Older Posts <i class="sf sf--arrow-right sf--lg"></i></a>
-          </li>
+        {% if post.description %}
+          <p class="p-summary">{{ post.description | escape }}</p>
         {% endif %}
-      </ul>
-    {% endif %}
+      </article>
 
-    <!-- <a class="rss-subscribe" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
+      {% for tag in post.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a class="post-tag" href="{{ relative_url }}/tag/{{ tag_name }}">
+          <i class="sf sf--tag"></i>
+          {{ tag_name }}
+        </a>
+      {% endfor %}
 
-  </section>
-</main>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+      <li class="previous">
+        {% if paginator.previous_page == 1 %}
+          <a href="{{ "/" | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
+          {% else %}
+          <a href="{{ paginator.previous_page | relative_url }}"><i class="sf sf--arrow-left sf--lg"></i> Newer Posts</a>
+        {% endif %}
+      </li>
+
+      {% if paginator.next_page %}
+        <li class="next">
+          <a href="{{ paginator.next_page | relative_url }}">Older Posts <i class="sf sf--arrow-right sf--lg"></i></a>
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+</section>

@@ -181,7 +181,6 @@ blockquote {
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding: 0 $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-laptop) {

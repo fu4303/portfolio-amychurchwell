@@ -1,53 +1,50 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="container">
-    <article>
-      <header class="post-header">
-        {% if page.date %}
-          <time class="post-category dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <i class="sf sf--calendar sf--lg"></i>
-            {{ page.date | date: date_format }}
-          </time>
-        {% endif %}
 
-        <a href="{{ page.url }}">
-          <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        </a>
+<article class="post h-entry container" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    {% if page.date %}
+      <time class="post-category dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <i class="sf sf--calendar sf--lg"></i>
+        {{ page.date | date: date_format }}
+      </time>
+    {% endif %}
 
-        {% if page.categories.size > 0 %}
-        <p class="post-category">
-          <i class="sf sf--note sf--lg"></i>
-          category: {{ page.categories }}
-        </p>
-        {% endif %}
+    <a href="{{ page.url }}">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    </a>
 
-        {% if page.tags.size > 0 %}
-        <div>
-          {% for tag in page.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a class="post-tag p-category" href="{{ relative_url }}/tag/{{ tag_name }}">
-                <i class="sf sf--tag"></i>
-                {{ tag_name }}
-              </a>
-          {% endfor %}
-        </div>
-        {% endif %}
+    {% if page.categories.size > 0 %}
+    <p class="post-category">
+      <i class="sf sf--note sf--lg"></i>
+      category: {{ page.categories }}
+    </p>
+    {% endif %}
 
-        {%- if page.hero -%}
-          <div class="post-hero"></div>
-        {%- endif -%}
-      </header>
+    {% if page.tags.size > 0 %}
+    <div>
+      {% for tag in page.tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+          <a class="post-tag p-category" href="{{ relative_url }}/tag/{{ tag_name }}">
+            <i class="sf sf--tag"></i>
+            {{ tag_name }}
+          </a>
+      {% endfor %}
+    </div>
+    {% endif %}
 
-      <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
-      </div>
-      <small>
-        /<a rel="author" class="p-author h-card" href="{{ "/" | relative_url }}">amy</a>
-      </small>
-      <p class="bug-note">See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a></p>
-    </article>
+    {%- if page.hero -%}
+      <div class="post-hero"></div>
+    {%- endif -%}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
   </div>
+  <small>
+    /<a rel="author" class="p-author h-card" href="{{ "/" | relative_url }}">amy</a>
+  </small>
+  <p class="bug-note">See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">File a bug!</a></p>
 </article>

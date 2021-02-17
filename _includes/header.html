@@ -1,6 +1,6 @@
-<header class="site-header" role="banner">
+<header class="site-header">
   <div class="wrapper">
-    <a class="site-title u-url" rel="me" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="p-name site-title u-url" rel="me" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     <nav class="site-nav">
       <ul>
         {%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" rel="me"><svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a></li>{%- endif -%}

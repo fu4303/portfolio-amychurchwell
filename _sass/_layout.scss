@@ -26,7 +26,7 @@ footer {
 */
 
 .page-content {
-  padding: $spacing-unit 0;
+  padding: ($spacing-unit*2) 0;
   flex: 1;
 }
 
@@ -37,7 +37,7 @@ footer {
 .md-section {
   width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
   width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
-  margin: 0 auto;
+  margin: $spacing-unit auto;
 
   @include media-query($on-palm) {
     width: 100%;
@@ -54,18 +54,10 @@ footer {
   border-radius: 3px;
   overflow: auto;
   position: relative;
-  margin: $spacing-unit auto;
+  padding: $spacing-unit;
 
   @include media-query($on-palm) {
     margin: $spacing-unit/2 0;
-  }
-
-  article {
-    margin: $spacing-unit;
-
-    @include media-query($on-palm) {
-      margin: $spacing-unit/2;
-    }
   }
 
   .rss-subscribe {

@@ -33,7 +33,7 @@
 
 .post-list {
     list-style: none;
-    margin: 0;
+    margin: -$spacing-unit;
     
     > li {
         margin-bottom: $spacing-unit / 2;
@@ -60,7 +60,7 @@
                 text-decoration: none;
             }
         }
-        
+
     }
 }
 
