@@ -2,30 +2,9 @@
 layout: default
 ---
 
-<section class="md-section">
-  <figure id="raccoon">
-    <img class="u-logo u-photo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
-    <figcaption>
-        <small>art by <a href="https://www.nonolottie.com/">nonolottie</a></small>
-    </figcaption>
-  </figure>
-
-  <aside>
-    <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
-    <h2>Hello,</h2>
-    <p class="p-note">
-      My name is <span class="p-name p-author">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>.
-      <br>
-      I am a front-end developer at <a class="p-org" href="https://mozilla.org">Mozilla</a> --we are on a mission to ensure the web is open and accessible to all.
-      <br>
-      When I am not programming I like to hike trails, practice yoga, and watch Star Trek.
-    </p>
-  </aside>
-</section>
-
-<section class="container md-section">
+<section class="post-list">
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="h-feed post-list">
+  <ul class="h-feed">
     <!-- <a class="rss-subscribe u-url" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
     {% for post in paginator.posts %}
     <li>

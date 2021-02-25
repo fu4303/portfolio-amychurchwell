@@ -32,9 +32,17 @@
 }
 
 .post-list {
-    list-style: none;
-    margin: -$spacing-unit;
-    
+    float: left;
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    @include media-query($on-palm) {
+        width: 100%;
+    }
+
     > li {
         margin-bottom: $spacing-unit / 2;
         padding: ($spacing-unit / 2) $spacing-unit;

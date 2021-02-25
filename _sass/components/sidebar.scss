@@ -1,0 +1,36 @@
+#sidebar {
+    padding: $spacing-unit;
+    float: left;
+    width: 250px;
+    margin-right: $spacing-unit;
+}
+
+#raccoon {
+    width: 250px;
+    max-width: 100%;
+
+    @include media-query($on-palm) {
+        display: none;
+    }
+
+    figcaption {
+        color: $text-color;
+        font-style: italic;
+    }
+}
+
+// Social List
+.social {
+    a:hover {
+        background: none;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+}
