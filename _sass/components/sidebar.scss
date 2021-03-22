@@ -1,8 +1,14 @@
 #sidebar {
-    padding: $spacing-unit;
+    @include relative-font-size(0.8);
+    background: $background-color;
+    box-sizing: border-box;
+    color: $brand-color;
+    padding: 0 20px;
+    position: fixed;
     float: left;
-    width: 250px;
-    margin-right: $spacing-unit;
+    width: 20%;
+    z-index: 2;
+    height: 100vh;
 }
 
 #raccoon {

@@ -8,6 +8,30 @@
 }
 
 /**
+* Navigation
+*/
+
+.site-nav {
+
+  li {
+      list-style: none;
+
+      &.active {
+        background: red;
+      }
+  }
+}
+
+/**
+* About
+*/
+
+.about {
+  color: $brand-color;
+}
+
+
+/**
 * Footer
 */
 
@@ -27,20 +51,25 @@ footer {
 * Page content
 */
 
-// .page-content {
-//   width: 60vw;
-// }
+.page-content {
+  background: $container-background url('/assets/img/tiny_grid.png');;
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 15px 20px;
+  overflow-y: scroll;
+  position: relative;
+}
 
 .page-heading {
   @include relative-font-size(2);
 }
 
 .container {
-  background-color: $container-background;
-  border-radius: 3px;
-  overflow: auto;
-  position: relative;
+  box-sizing: border-box;
+  float: right;
+  height: 100%;
   padding: $spacing-unit;
+  width: 80%;
 
   @include media-query($on-palm) {
     margin: $spacing-unit/2 0;
