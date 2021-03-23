@@ -6,16 +6,20 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
+    <img id="unicorn" src="{{ '/assets/img/unicorn.svg' | relative_url }}" alt="beautiful unicorn">
 
-    <p>
+    <p class="about-desc">
         {{ content }}
     </p>
 
-    <a href="https://www.mozilla.org/firefox/new/">
-        <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
-    </a>
+    <img src="{{ '/assets/img/dog-friendly.gif' | relative_url }}" alt="dog friendly site">
+
 
   </article>
 
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
+  <!-- <a href="https://www.mozilla.org/firefox/new/">
+    <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
+  </a>
+
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a> -->
 </div>

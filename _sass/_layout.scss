@@ -12,14 +12,48 @@
 */
 
 .site-nav {
+  border-left: 1px dashed $grey-color-dark;
+  margin-top: $spacing-unit;
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
 
   li {
-      list-style: none;
+      color: $text-color;
+
+      &:before {
+        content: "╌╌";
+        font-size: 1.3em;
+      }
 
       &.active {
         background: red;
       }
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+      }
   }
+
+  #home:before {
+    content: "\e150";
+    line-height: 0.75em;
+    font-family: sudofont;
+    font-size: 1.3em;
+    margin-right: 5px;
+  }
+
+  #about:before {
+    content: "\e156";
+    line-height: 0.75em;
+    font-family: sudofont;
+    font-size: 1.3em;
+    margin-right: 10px;
+  }
+
 }
 
 /**
@@ -52,12 +86,12 @@ footer {
 */
 
 .page-content {
+  @include relative-font-size(0.8);
   background: $container-background url('/assets/img/tiny_grid.png');;
   box-sizing: border-box;
   height: 100vh;
   margin: 15px 20px;
   overflow-y: scroll;
-  position: relative;
 }
 
 .page-heading {
@@ -82,3 +116,21 @@ footer {
   }
 }
 
+/**
+* About
+*/
+
+.about {
+  .post-header {
+    border-bottom: 0;
+  }
+  
+  #unicorn {
+    fill: $brand-color;
+    margin: 0 $spacing-unit;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 250px;
+  }
+}
