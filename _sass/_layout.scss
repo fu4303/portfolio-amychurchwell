@@ -12,29 +12,28 @@
 */
 
 .site-nav {
-  border-left: 1px dashed $grey-color-dark;
-  margin-top: $spacing-unit;
+  @include relative-font-size(0.8);
+  text-transform: lowercase;
 
   ul {
     list-style: none;
     margin-left: 0;
+    list-style-type: "──";
+    list-style-position: inside;
+    border-left: 1px solid $grey-color-dark;
   }
 
   li {
       color: $text-color;
+      white-space: nowrap;
 
-      &:before {
-        content: "╌╌";
-        font-size: 1.3em;
-      }
-
-      &.active {
-        background: red;
+      .active {
+        background: $secondary-brand-color;
       }
 
       a {
-        @include inline-block;
         text-decoration: none;
+        padding: 0 5px;
       }
   }
 
@@ -54,26 +53,6 @@
     line-height: 0.75;
     margin-right: 10px;
     white-space: nowrap;
-  }
-}
-
-/**
-* Breadcrumb nav
-*/
-
-.breadcrumb {
-  position: absolute;
-  background: $container-background;
-  z-index: 2;
-  top: 0;
-  left: 0;
-
-  ol {
-    list-style: none;
-
-    li {
-      @include inline-block;
-    }
   }
 }
 
@@ -100,12 +79,10 @@ footer {
 .page-content {
   @include relative-font-size(0.8);
   box-sizing: border-box;
-  margin: 0 3%;
-  overflow-y: scroll;
+  margin: 10px 3%;
 
   @include media-query($on-palm) {
     margin: 0;
-    overflow-y: unset;
   }
 }
 
@@ -114,10 +91,8 @@ footer {
 }
 
 .container {
-  background: $container-background url('/assets/img/tiny_grid.png');
   box-sizing: border-box;
   float: right;
-  height: 100vh;
   overflow: auto;
   padding: $spacing-unit;
   position: relative;

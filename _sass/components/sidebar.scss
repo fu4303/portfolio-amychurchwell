@@ -2,7 +2,7 @@
     @include relative-font-size(0.8);
     box-sizing: border-box;
     color: $brand-color;
-    float: left;
+    line-height: 2;
     padding: 0 20px;
     position: fixed;
     width: 20%;
@@ -16,22 +16,10 @@
     }
 }
 
-#raccoon {
-    width: 250px;
-    max-width: 100%;
-
-    @include media-query($on-palm) {
-        display: none;
-    }
-
-    figcaption {
-        color: $text-color;
-        font-style: italic;
-    }
-}
-
 // Social List
 .social {
+    margin-bottom: $spacing-unit;
+
     a:hover {
         background: none;
     }

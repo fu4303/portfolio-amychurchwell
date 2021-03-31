@@ -1,10 +1,10 @@
-<nav class="site-nav">
+<nav aria-label="Navigation" class="site-nav">
     <ul>
         <li>
-            <a id="home" href="{{ "/" | relative_url }}">Home</a>
+            <a id="home" {% if page.url == "/" %}class="active"{% endif %} href="{{ "/" | relative_url }}">Home / Posts</a>
         </li>
         <li>
-            <a id="about" href="{{ "/about" | relative_url }}">About</a>
+            <a id="about" {% if page.url == "/about/" %}class="active"{% endif %}href="{{ "/about" | relative_url }}">About</a>
         </li>
     </ul>
 </nav>
