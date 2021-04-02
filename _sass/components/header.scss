@@ -3,7 +3,11 @@
 */
 
 .site-header {
-    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100vw;
+    text-align: center;
 }
 
 .site-title {

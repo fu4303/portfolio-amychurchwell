@@ -2,22 +2,46 @@
 layout: default
 ---
 
-<div class="container about">
-  <article>
-    <img id="unicorn" src="{{ '/assets/img/unicorn.svg' | relative_url }}" alt="beautiful unicorn">
+<article class="container about">
 
-    <p class="about-desc">
-        {{ content }}
-    </p>
+  <div class="about-card">
+    <img class="u-logo u-photo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">
 
-    <img src="{{ '/assets/img/dog-friendly.gif' | relative_url }}" alt="dog friendly site">
+    <ul>
+      <li>Name: Amy</li>
+      <li>Pronouns: <a href="https://pronoun.is/she">she/her</a></li>
+    </ul>
+    {% include social.html %}
+  </div>
+
+  <p class="about-desc">
+    {{ content }}
+  </p>
+
+  <img src="{{ '/assets/img/divider.jpg' | relative_url }}" alt="">
+
+  <h3>Blinkies</h3>
+
+  <!-- <p>
+    <a href="https://www.mozilla.org/firefox/new/">
+      <img src="{{ '/assets/img/flag.jpg' | relative_url }}" alt="LGBTQ Pride Flag">
+    </a>
+  </p> -->
+
+  <!-- <ul>
+    <li>
+      <a href="https://www.mozilla.org/firefox/new/">
+        <img src="{{ '/assets/img/buttons/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
+      </a>
+    </li>
+    <li>
+
+    </li>
+  </ul> -->
 
 
-  </article>
 
-  <!-- <a href="https://www.mozilla.org/firefox/new/">
-    <img src="{{ '/assets/img/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
-  </a>
+  <!-- <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a> -->
 
-  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a> -->
-</div>
+
+</article>

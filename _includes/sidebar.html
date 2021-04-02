@@ -1,46 +1,14 @@
 <aside id="sidebar">
   <img src="{{ '/assets/img/lil-rainbow.gif' | relative_url }}" alt="gif of a pixel rainbow">
   <h2>Hello,</h2>
-  <div id="sidebar-desc">
-    <p class="p-note">
-      My name is <span class="p-name p-author">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>. — I am a software engineer at <a class="p-org" href="https://mozilla.org">Mozilla</a>, where I write code for the <a href="https://www.mozilla.org/firefox/new/">Firefox browser</a>. :)
-    </p>
-  </div>
+  <p class="p-note">
+    My name is <span class="p-name p-author">Amy Churchwell</span>. My pronouns are <a href="https://pronoun.is/she">she/her</a>. — I am a software engineer at <a class="p-org" href="https://mozilla.org">Mozilla</a>, where I write code for the <a href="https://www.mozilla.org/firefox/new/">Firefox browser</a>. :)
+  </p>
 
-  <div class="social">
-    <ul>
-      {%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" rel="me"><svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a></li>{%- endif -%}
-
-      {%- if site.github_username -%}
-      <li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" rel="me">
-        <svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-      </a></li>
-      {%- endif -%}
-
-      {%- if site.instagram_username -%}
-      <li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" rel="me">
-        <svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#instagram' | relative_url }}"></use></svg>
-      </a></li>
-      {%- endif -%}
-
-      {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<li><a href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}" rel="me"><svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#mastodon' | relative_url }}"></use></svg></li>{%- endif -%}{%- endfor -%}
-
-      {%- if site.youtube_username -%}<li><a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}" rel="me"><svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use></svg></a></li>{%- endif -%}
-
-      {%- if site.linkedin_username -%}
-      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" rel="me">
-        <svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a></li>
-      {%- endif -%}
-
-      {%- if site.rss -%}
-      <li><a href="{{ 'feed.xml' | relative_url }}">
-        <svg class="svg-icon" viewBox="0 0 16 16"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span>
-      </a></li>
-      {%- endif -%}
-    </ul>
-  </div>
-
+  {% include social.html %}
   {% include navigation.html %}
+
+  <p>See a bug or typo? <a href="https://github.com/amychurchwell/amychurchwell.com/issues/new">Please file a bug!</a> 🐛</p>
 
   <!-- <figure id="raccoon">
     <img class="u-logo u-photo" src="{{ '/assets/img/raccoon.png' | relative_url }}" alt="illustration of a raccoon on a laptop">

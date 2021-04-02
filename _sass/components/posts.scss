@@ -2,11 +2,6 @@
 * Posts
 */
 
-.bug-note {
-    font-size: $small-font-size;
-    margin-top: $spacing-unit;
-}
-
 .pager {
     @include inline-block;
     margin: 0;
@@ -44,10 +39,6 @@
         border-radius: 2px;
         width: 400px;
         min-height: 150px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
 
         h3 {
             color: $text-color;

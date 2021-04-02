@@ -79,11 +79,8 @@ footer {
 .page-content {
   @include relative-font-size(0.8);
   box-sizing: border-box;
-  margin: 10px 3%;
-
-  @include media-query($on-palm) {
-    margin: 0;
-  }
+  margin: 110px 30px 10px;
+  overflow: auto;
 }
 
 .page-heading {
@@ -94,9 +91,11 @@ footer {
   box-sizing: border-box;
   float: right;
   overflow: auto;
-  padding: $spacing-unit;
+  padding: 20px;
   position: relative;
   width: 75%;
+  background: $container-background url('../../assets/img/tiny_grid.png');
+  line-height: 2;
 
   @include media-query($on-palm) {
     margin: $spacing-unit/2 0;
@@ -113,6 +112,16 @@ footer {
 /**
 * About
 */
+
+.about-card {
+  border: 2px solid $background-color;
+  float: right;
+  padding: 5px;
+}
+
+.u-photo {
+  width: 200px;
+}
 
 #unicorn {
   fill: $brand-color;
