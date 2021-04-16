@@ -2,18 +2,18 @@
     @include relative-font-size(0.8);
     box-sizing: border-box;
     color: $brand-color;
+    left: 20px;
     line-height: 2;
     padding: 0 20px;
     position: fixed;
     width: 300px;
     z-index: 2;
-    left: 20px;
 
     @include media-query($on-palm) {
-        width: 100%;
-        position: unset;
-        height: unset;
         float: unset;
+        height: unset;
+        margin: 0 auto;
+        position: unset;
     }
 }
 

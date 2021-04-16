@@ -26,8 +26,6 @@ body {
   font-kerning: normal;
   max-height: 100vh;
   text-rendering: optimizeLegibility;
-  transition: all .5s ease-in-out;
-
   background: $background-color;
 }
 
@@ -232,7 +230,7 @@ table {
   border-collapse: collapse;
   border: 2px solid $text-color;
   color: $text-color;
-  margin-bottom: $spacing-unit;
+  margin: $spacing-unit auto;
   text-align: $table-text-align;
   max-width: 100%;
 

@@ -2,8 +2,8 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
   <body class="h-card">
-    {%- include header.html -%}
     <main class="page-content" aria-label="Content">
+      {%- include header.html -%}
       {%- include sidebar.html -%}
       {{ content }}
     </main>
