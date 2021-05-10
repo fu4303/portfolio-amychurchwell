@@ -1,4 +1,4 @@
-amychurchwell.com
+blog.amychurchwell.com
 ---
 :cherry_blossom: A [personal blog](https://amychurchwell.com) built with [Jekyll](https://jekyllrb.com/) & GitHub pages. :cherry_blossom:
 
