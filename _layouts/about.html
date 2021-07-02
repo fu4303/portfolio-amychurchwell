@@ -14,34 +14,20 @@ layout: default
     {% include social.html %}
   </div>
 
-  <p class="about-desc">
-    {{ content }}
-  </p>
+  {{ content }}
 
-  <img src="{{ '/assets/img/divider.jpg' | relative_url }}" alt="">
-
-  <h3>Blinkies</h3>
-
-  <!-- <p>
-    <a href="https://www.mozilla.org/firefox/new/">
-      <img src="{{ '/assets/img/flag.jpg' | relative_url }}" alt="LGBTQ Pride Flag">
-    </a>
-  </p> -->
-
-  <!-- <ul>
-    <li>
-      <a href="https://www.mozilla.org/firefox/new/">
-        <img src="{{ '/assets/img/buttons/firefox-button.gif' | relative_url }}" alt="download Firefox banner">
-      </a>
-    </li>
-    <li>
-
-    </li>
-  </ul> -->
-
-
-
-  <!-- <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a> -->
+  <section>
+    <ul class="banners">
+      <li>
+        <a href="https://www.mozilla.org/firefox/new/">
+          <img src="{{ '/assets/img/flag.jpg' | relative_url }}" alt="LGBTQ Pride Flag">
+        </a>
+      </li>
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="{{ '/assets/img/cc-badge.png' | relative_url }}" /></a>
+      </li>
+    </ul>
+  </section>
 
 
 </article>

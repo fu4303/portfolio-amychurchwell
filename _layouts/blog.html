@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
+<!-- TODO: fix paginator for /blog/ -->
 <section class="post-list">
   <ul class="h-feed">
     <!-- <a class="rss-subscribe u-url" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a> -->
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     <li>
       <article class="p-entry post-link">
         <time class="post-meta dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

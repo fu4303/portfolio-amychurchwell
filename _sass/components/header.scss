@@ -9,11 +9,7 @@
     text-align: center;
     background: $background-color;
     border-bottom: 1px solid black;
-
-    &:after {
-        content: url('/img/flag.jpg');;
-        height: 100px;
-    }
+    padding-bottom: 15px;
 
     @include media-query($on-palm) {
         position: unset;
@@ -30,28 +26,4 @@
     a {
         text-decoration: none;
     }
-}
-
-/* ----------------------------------------------
- * Tulip Animation
- * ---------------------------------------------- */
-
-@keyframes sway {
-    0% {
-        transform: skew(5deg);
-
-    }
-    50% {
-        transform: skew(0);
-
-    }
-    100% {
-        transform: skew(-5deg);
-
-    }
-}
-
-.tulips {
-    animation: 2s infinite alternate sway;
-    transform-origin: bottom;
 }

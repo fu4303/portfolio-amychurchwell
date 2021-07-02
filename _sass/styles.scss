@@ -27,7 +27,7 @@
   font-display: swap;
 }
 
-$base-font-family: Verdana, Helvetica, sans-serif, "Apple Color Emoji" !default;
+$base-font-family: monospace, "Apple Color Emoji" !default;
 
 $pixel-font: "pixel", monospace;
 $pixel-drop-shadow: "fippsregular", monospace;
@@ -86,6 +86,5 @@ $on-laptop: "min-width: 800px";
   "normalize",
   "sudofont",
   "components/posts",
-  "components/sidebar",
   "components/header"
 ;

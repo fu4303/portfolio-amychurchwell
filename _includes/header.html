@@ -1,11 +1,9 @@
 <header class="site-header">
   <h1 class="site-title">
-    <a class="p-name u-url" rel="me" href="{{ "/" | relative_url }}">
+    <a class="u-url" rel="me" href="{{ "/" | relative_url }}">
       {{ site.title | escape }}
     </a>
   </h1>
-  <h2 class="content-title">{{ page.title }}</h2>
   {% include navigation.html %}
-  <img class="tulips" src="{{ '/assets/img/tulips.png' | relative_url }}" alt="">
 </header>
 

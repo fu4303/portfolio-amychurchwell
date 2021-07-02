@@ -16,15 +16,14 @@
   text-transform: lowercase;
 
   ul {
+    display: inline-block;
     list-style: none;
-    margin-left: 0;
-    list-style-type: "──";
-    list-style-position: inside;
-    border-left: 1px solid $grey-color-dark;
+    margin: 0;
   }
 
   li {
       color: $text-color;
+      text-align: left;
       white-space: nowrap;
 
       .active {
@@ -43,6 +42,15 @@
     font-size: 1.3em;
     line-height: 0.75;
     margin-right: 5px;
+    white-space: nowrap;
+  }
+
+  #blog:before {
+    content: "\E12D";
+    font-family: sudofont;
+    font-size: 1.3em;
+    line-height: 0.75;
+    margin-right: 10px;
     white-space: nowrap;
   }
 
@@ -81,7 +89,6 @@ footer {
   box-sizing: border-box;
   width: 800px;
   margin: 0 auto;
-  border: 1px solid black;
 
   @include media-query($on-palm) {
     width: 100%;
@@ -97,7 +104,6 @@ footer {
   box-sizing: border-box;
   padding: 20px;
   position: relative;
-  background: $container-background url('../../assets/img/tiny_grid.png');
   line-height: 2;
 
   @include media-query($on-palm) {
@@ -126,11 +132,15 @@ footer {
   width: 200px;
 }
 
-#unicorn {
-  fill: $brand-color;
-  width: 150px;
-  display: inline-block;
-  margin: 0 10px;
-  transform: scaleX(-1);
-}
+.banners {
+  margin: 0;
 
+  li {
+    list-style: none;
+    display: inline-block;
+
+    img {
+      max-height: 30px;
+    }
+  }
+}

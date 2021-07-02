@@ -15,7 +15,7 @@ sass:
   sass_dir: _sass
   style: compact
 
-permalink: /:categories/:title
+permalink: /blog/:categories/:title
 
 plugins:
   - jekyll-feed
