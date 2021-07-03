@@ -4,10 +4,10 @@
             <a id="home" {% if page.url == "/" %}class="active"{% endif %} href="{{ "/" | relative_url }}">Home</a>
         </li>
         <li>
-            <a id="blog" {% if page.url == "/blog/" %}class="active"{% endif %} href="{{ "/blog/" | relative_url }}">Blog</a>
+            <a id="blog" {% if page.url == "/blog" %}class="active"{% endif %} href="{{ "/blog" | relative_url }}">Blog</a>
         </li>
         <li>
-            <a id="about" {% if page.url == "/about/" %}class="active"{% endif %}href="{{ "/about/" | relative_url }}">About</a>
+            <a id="about" {% if page.url == "/about" %}class="active"{% endif %}href="{{ "/about" | relative_url }}">About</a>
         </li>
     </ul>
 </nav>
